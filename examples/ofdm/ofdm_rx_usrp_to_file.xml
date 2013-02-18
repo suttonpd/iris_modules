@@ -7,6 +7,7 @@
     <component name="usrprx1" class="usrprx">
       <parameter name="frequency" value="5010000000"/>
       <parameter name="rate" value="500000"/>
+      <parameter name="gain" value="15"/>
       <port name="output1" class="output"/>
     </component>
 

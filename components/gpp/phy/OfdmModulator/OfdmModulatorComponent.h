@@ -53,6 +53,8 @@
 #include <boost/scoped_ptr.hpp>
 #include "irisapi/PhyComponent.h"
 #include "kissfft/kissfft.hh"
+#include "modulation/OfdmIndexGenerator.h"
+#include "modulation/OfdmPreambleGenerator.h"
 
 namespace iris
 {
@@ -125,6 +127,8 @@ class OfdmModulatorComponent
   CplxVec symbol_;            ///< Contains a single OFDM symbol.
 
   boost::scoped_ptr<kissfft<float> > fft_;  ///< Our FFT object pointer.
+  OfdmIndexGenerator indexGenerator_;       ///< Our index generator.
+  OfdmPreambleGenerator preambleGenerator_; ///< Our preamble generator.
 
   template <typename T, size_t N>
   static T* begin(T(&arr)[N]) { return &arr[0]; }

@@ -40,8 +40,6 @@
 
 #include "irisapi/LibraryDefs.h"
 #include "irisapi/Version.h"
-#include "modulation/OfdmIndexGenerator.h"
-#include "modulation/OfdmPreambleGenerator.h"
 #include "modulation/Crc.h"
 #include "modulation/Whitener.h"
 #include "modulation/QamDemodulator.h"
@@ -164,11 +162,11 @@ void OfdmDemodulatorComponent::setup()
   pilotIndices_.resize(numPilotCarriers_x);
   dataIndices_.clear();
   dataIndices_.resize(numDataCarriers_x);
-  OfdmIndexGenerator::generateIndices(numDataCarriers_x,
-                                      numPilotCarriers_x,
-                                      numGuardCarriers_x,
-                                      pilotIndices_.begin(), pilotIndices_.end(),
-                                      dataIndices_.begin(), dataIndices_.end());
+  indexGenerator_.generateIndices(numDataCarriers_x,
+                                  numPilotCarriers_x,
+                                  numGuardCarriers_x,
+                                  pilotIndices_.begin(), pilotIndices_.end(),
+                                  dataIndices_.begin(), dataIndices_.end());
 
   numBins_ = numDataCarriers_x + numPilotCarriers_x + numGuardCarriers_x + 1;
   symbolLength_ = numBins_ + cyclicPrefixLength_x;
@@ -179,10 +177,10 @@ void OfdmDemodulatorComponent::setup()
 
   preamble_.clear();
   preamble_.resize(numBins_);
-  OfdmPreambleGenerator::generatePreamble(numDataCarriers_x,
-                                          numPilotCarriers_x,
-                                          numGuardCarriers_x,
-                                          preamble_.begin(), preamble_.end());
+  preambleGenerator_.generatePreamble(numDataCarriers_x,
+                                      numPilotCarriers_x,
+                                      numGuardCarriers_x,
+                                      preamble_.begin(), preamble_.end());
   preambleBins_.resize(numBins_/2);
   halfFft_->transform(&preamble_[0], &preambleBins_[0]);
 

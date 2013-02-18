@@ -53,7 +53,10 @@ std::string PythonPlotter::buildScalarCommand(std::string data, std::string titl
      << "D = ["
      <<  data
      << "]\n"
-     << "fig = figure()\n"
+     << "fig = figure("
+     << id
+     << ")\n"
+     << "fig.clf()\n"
      << "plot([k for k in D])\n"
      << "title('"
      << title
@@ -70,28 +73,31 @@ std::string PythonPlotter::buildComplexCommand(std::string data, std::string tit
      << "D = ["
      <<  data
      << "]\n"
-     << "fig = figure()\n"
-     << "subplot(4,1,1)\n"
+     << "fig = figure("
+     << id
+     << ")\n"
+     << "fig.clf()\n"
+     << "fig.add_subplot(4,1,1)\n"
      << "plot([real(k) for k in D])\n"
      << "title('"
      << title
      << " - In-Phase')\n"
-     << "subplot(4,1,2)\n"
+     << "fig.add_subplot(4,1,2)\n"
      << "plot([imag(k) for k in D])\n"
      << "title('"
      << title
      << " - Quadrature')\n"
-     << "subplot(4,1,3)\n"
+     << "fig.add_subplot(4,1,3)\n"
      << "plot([abs(k) for k in D])\n"
      << "title('"
      << title
      << " - Magnitude')\n"
-     << "subplot(4,1,4)\n"
+     << "fig.add_subplot(4,1,4)\n"
      << "plot([angle(k) for k in D])\n"
      << "title('"
      << title
      << " - Phase')\n"
-     << "fig.subplots_adjust(hspace=0.5)\n"
+     << "subplots_adjust(hspace=0.5)\n"
      << "draw()\n"
      << "show()\n";
     return ss.str();

@@ -59,9 +59,10 @@ BOOST_AUTO_TEST_CASE(OfdmIndexGenerator_Default_Test)
   std::vector< int > pIndices(numPilot);
   std::vector< int > dIndices(numData);
 
-  OfdmIndexGenerator::generateIndices(numData,numPilot,numGuard,
-                                      pIndices.begin(),pIndices.end(),
-                                      dIndices.begin(),dIndices.end());
+  OfdmIndexGenerator gen;
+  gen.generateIndices(numData,numPilot,numGuard,
+                      pIndices.begin(),pIndices.end(),
+                      dIndices.begin(),dIndices.end());
 
   int p[] = {13,38,63,88,168,193,218,243};
   std::vector< int > pilots(begin(p),end(p));
@@ -83,9 +84,10 @@ BOOST_AUTO_TEST_CASE(OfdmIndexGenerator_OddBins_Test)
   std::vector< int > pIndices(numPilot);
   std::vector< int > dIndices(numData);
 
-  OfdmIndexGenerator::generateIndices(numData,numPilot,numGuard,
-                                      pIndices.begin(),pIndices.end(),
-                                      dIndices.begin(),dIndices.end());
+  OfdmIndexGenerator gen;
+  gen.generateIndices(numData,numPilot,numGuard,
+                      pIndices.begin(),pIndices.end(),
+                      dIndices.begin(),dIndices.end());
 
   int p[] = {1,4,7};
   std::vector< int > pilots(begin(p),end(p));
@@ -107,9 +109,10 @@ BOOST_AUTO_TEST_CASE(OfdmIndexGenerator_OddActive_Test)
   std::vector< int > pIndices(numPilot);
   std::vector< int > dIndices(numData);
 
-  OfdmIndexGenerator::generateIndices(numData,numPilot,numGuard,
-                                      pIndices.begin(),pIndices.end(),
-                                      dIndices.begin(),dIndices.end());
+  OfdmIndexGenerator gen;
+  gen.generateIndices(numData,numPilot,numGuard,
+                      pIndices.begin(),pIndices.end(),
+                      dIndices.begin(),dIndices.end());
 
   int p[] = {1,4,7};
   std::vector< int > pilots(begin(p),end(p));
@@ -131,9 +134,10 @@ BOOST_AUTO_TEST_CASE(OfdmIndexGenerator_AllPilot_Test)
   std::vector< int > pIndices(numPilot);
   std::vector< int > dIndices(numData);
 
-  OfdmIndexGenerator::generateIndices(numData,numPilot,numGuard,
-                                      pIndices.begin(),pIndices.end(),
-                                      dIndices.begin(),dIndices.end());
+  OfdmIndexGenerator gen;
+  gen.generateIndices(numData,numPilot,numGuard,
+                      pIndices.begin(),pIndices.end(),
+                      dIndices.begin(),dIndices.end());
 
   int p[] = {1,2,3,4,5,6,7,8,9,10};
   std::vector< int > pilots(begin(p),end(p));
@@ -150,9 +154,10 @@ BOOST_AUTO_TEST_CASE(OfdmIndexGenerator_AllGuard_Test)
   std::vector< int > pIndices(numPilot);
   std::vector< int > dIndices(numData);
 
-  OfdmIndexGenerator::generateIndices(numData,numPilot,numGuard,
-                                      pIndices.begin(),pIndices.end(),
-                                      dIndices.begin(),dIndices.end());
+  OfdmIndexGenerator gen;
+  gen.generateIndices(numData,numPilot,numGuard,
+                      pIndices.begin(),pIndices.end(),
+                      dIndices.begin(),dIndices.end());
 
   BOOST_CHECK(pIndices.empty());
   BOOST_CHECK(dIndices.empty());

@@ -57,6 +57,12 @@ class OfdmPreambleGenerator
   typedef std::vector<Cplx>     CplxVec;
   typedef CplxVec::iterator     CplxVecIt;
 
+  OfdmPreambleGenerator()
+  {
+    posPreambleSequence_ = createPosPreambleSequence();
+    negPreambleSequence_ = createNegPreambleSequence();
+  }
+
   /** Generate an OFDM preamble symbol with a half-symbol repetition.
    *
    * A time-domain OFDM preamble symbol is generated using the 802.16
@@ -71,11 +77,11 @@ class OfdmPreambleGenerator
    * @param outBegin  Iterator to first element of output vector.
    * @param outEnd    Iterator to one past last element of output.
    */
-  static void generatePreamble(int numData,
-                               int numPilot,
-                               int numGuard,
-                               CplxVecIt outBegin,
-                               CplxVecIt outEnd)
+  void generatePreamble(int numData,
+                        int numPilot,
+                        int numGuard,
+                        CplxVecIt outBegin,
+                        CplxVecIt outEnd)
   {
     using namespace boost::lambda;
 
@@ -98,10 +104,10 @@ class OfdmPreambleGenerator
   }
 
   /// Convenience function for logging.
-  static std::string getName(){ return "OfdmPreambleGenerator"; }
+  std::string getName(){ return "OfdmPreambleGenerator"; }
 
   /// Static function used to build up posPreambleSequence_ vector.
-  static CplxVec createPosPreambleSequence()
+  CplxVec createPosPreambleSequence()
   {
     using namespace boost::lambda;
     typedef Cplx c;
@@ -127,7 +133,7 @@ class OfdmPreambleGenerator
   }
 
   /// Static function used to build up negPreambleSequence_ vector.
-  static CplxVec createNegPreambleSequence()
+  CplxVec createNegPreambleSequence()
   {
     using namespace boost::lambda;
     typedef Cplx c;
@@ -152,24 +158,16 @@ class OfdmPreambleGenerator
     return vec;
   }
 
-  static const CplxVec posPreambleSequence_;
-  static const CplxVec negPreambleSequence_;
-
  private:
+
+  CplxVec posPreambleSequence_;
+  CplxVec negPreambleSequence_;
 
   template <typename T, size_t N>
   static T* begin(T(&arr)[N]) { return &arr[0]; }
   template <typename T, size_t N>
   static T* end(T(&arr)[N]) { return &arr[0]+N; }
-
-  OfdmPreambleGenerator(); // Disabled constructor
 };
-
-const OfdmPreambleGenerator::CplxVec OfdmPreambleGenerator::posPreambleSequence_ =
-    OfdmPreambleGenerator::createPosPreambleSequence();
-
-const OfdmPreambleGenerator::CplxVec OfdmPreambleGenerator::negPreambleSequence_ =
-    OfdmPreambleGenerator::createNegPreambleSequence();
 
 } // namespace iris
 
