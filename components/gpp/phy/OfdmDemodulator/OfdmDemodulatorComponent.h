@@ -53,6 +53,8 @@
 
 #include "irisapi/PhyComponent.h"
 #include "modulation/OfdmPreambleDetector.h"
+#include "modulation/OfdmIndexGenerator.h"
+#include "modulation/OfdmPreambleGenerator.h"
 #include "kissfft/kissfft.hh"
 #include "utility/MathDefines.h"
 
@@ -149,7 +151,9 @@ private:
   boost::scoped_ptr<kissfft<float> > halfFft_;
   boost::scoped_ptr<kissfft<float> > fullFft_;
 
-  OfdmPreambleDetector detector_;   ///< Our preamble detector.
+  OfdmPreambleDetector detector_;           ///< Our preamble detector.
+  OfdmIndexGenerator indexGenerator_;       ///< Our index generator.
+  OfdmPreambleGenerator preambleGenerator_; ///< Our preamble generator.
 
   template <typename T, size_t N>
   static T* begin(T(&arr)[N]) { return &arr[0]; }

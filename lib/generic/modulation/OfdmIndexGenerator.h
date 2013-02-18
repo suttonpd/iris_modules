@@ -57,6 +57,8 @@ class OfdmIndexGenerator
   typedef std::vector<int>     IntVec;
   typedef IntVec::iterator     IntVecIt;
 
+  OfdmIndexGenerator(){}
+
   /** Generate subcarrier indices for pilot and data carriers in an OFDM symbol.
    *
    * This algorithm attempts to place pilots in an OFDM symbol such that
@@ -71,7 +73,7 @@ class OfdmIndexGenerator
    * @param dataBegin Iterator to first element of output data carrier indices.
    * @param dataEnd   Iterator to one past last element of output data indices.
    */
-  static void generateIndices(int numData,
+  void generateIndices(int numData,
                               int numPilot,
                               int numGuard,
                               IntVecIt pilotsBegin,
@@ -118,11 +120,7 @@ class OfdmIndexGenerator
   }
 
   /// Convenience function for logging.
-  static std::string getName(){ return "OfdmIndexGenerator"; }
-
- private:
-
-  OfdmIndexGenerator(); // Disabled constructor
+  std::string getName(){ return "OfdmIndexGenerator"; }
 };
 
 } // namespace iris
