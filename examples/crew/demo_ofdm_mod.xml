@@ -21,7 +21,7 @@
     </component>
 
     <component name="filerawwriter1" class="filerawwriter">
-      <parameter name="filename" value="out.bin"/>
+      <parameter name="filename" value="out.tmp"/>
       <port name="input1" class="input"/>
     </component>
 
