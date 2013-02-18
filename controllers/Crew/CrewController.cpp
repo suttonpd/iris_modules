@@ -102,7 +102,7 @@ void CrewController::threadLoop()
 
       p2.engineName = "phyengine1";
       p2.componentName = "ofdmmod1";
-      p2.parameterName = "numdatacarriers";
+      p2.parameterName = "numguardcarriers";
       stringstream str2;
       str2.clear();
       str2 << guardCarriers;
