@@ -55,8 +55,6 @@ public:
   virtual void processMessageFromAbove(boost::shared_ptr<StackDataSet> set);
   virtual void processMessageFromBelow(boost::shared_ptr<StackDataSet> set);
 
-  virtual void registerPorts();
-
   virtual void start();
   virtual void stop();
 
