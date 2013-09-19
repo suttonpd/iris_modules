@@ -21,25 +21,12 @@
 #
 
 ########################################################################
-# Custom target to ensure headers get picked up by IDEs
+# Build tests
 ########################################################################
-SET(headers
-    Crc.h
-    OfdmIndexGenerator.h
-    OfdmPreambleDetector.h
-    OfdmPreambleGenerator.h
-    QamDemodulator.h
-    QamModulator.h
-    ToneGenerator.h
-    Whitener.h
-)
-ADD_CUSTOM_TARGET(libgenericmodulationheaders SOURCES ${headers})
+#turn the test cpp file into an executable with an int main() function
+ADD_DEFINITIONS(-DBOOST_TEST_DYN_LINK -DBOOST_TEST_MAIN)
+INCLUDE_DIRECTORIES(..)
+ADD_EXECUTABLE(waterfallplot_test Waterfallplot_test.cpp)
+TARGET_LINK_LIBRARIES(waterfallplot_test ${Boost_LIBRARIES} waterfallplot)
+ADD_TEST(waterfallplot_test waterfallplot_test)
 
-########################################################################
-# Build any libraries
-########################################################################
-
-########################################################################
-# Add the test directory
-########################################################################
-ADD_SUBDIRECTORY(test)

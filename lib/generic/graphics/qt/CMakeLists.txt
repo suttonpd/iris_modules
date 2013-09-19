@@ -21,25 +21,14 @@
 #
 
 ########################################################################
-# Custom target to ensure headers get picked up by IDEs
+# Add the subdirectories
 ########################################################################
-SET(headers
-    Crc.h
-    OfdmIndexGenerator.h
-    OfdmPreambleDetector.h
-    OfdmPreambleGenerator.h
-    QamDemodulator.h
-    QamModulator.h
-    ToneGenerator.h
-    Whitener.h
-)
-ADD_CUSTOM_TARGET(libgenericmodulationheaders SOURCES ${headers})
+# Recurse into subdirectories. This does not actually cause another cmake 
+# executable to run. The same process will walk through the project's 
+# entire directory structure.
+ADD_SUBDIRECTORY(common)
+ADD_SUBDIRECTORY(scatterplot)
+ADD_SUBDIRECTORY(realplot)
+ADD_SUBDIRECTORY(complexplot)
+ADD_SUBDIRECTORY(waterfallplot)
 
-########################################################################
-# Build any libraries
-########################################################################
-
-########################################################################
-# Add the test directory
-########################################################################
-ADD_SUBDIRECTORY(test)

@@ -21,25 +21,9 @@
 #
 
 ########################################################################
-# Custom target to ensure headers get picked up by IDEs
+# Build executable, register as test
 ########################################################################
-SET(headers
-    Crc.h
-    OfdmIndexGenerator.h
-    OfdmPreambleDetector.h
-    OfdmPreambleGenerator.h
-    QamDemodulator.h
-    QamModulator.h
-    ToneGenerator.h
-    Whitener.h
-)
-ADD_CUSTOM_TARGET(libgenericmodulationheaders SOURCES ${headers})
-
-########################################################################
-# Build any libraries
-########################################################################
-
-########################################################################
-# Add the test directory
-########################################################################
-ADD_SUBDIRECTORY(test)
+ADD_DEFINITIONS(-DBOOST_TEST_DYN_LINK -DBOOST_TEST_MAIN)
+ADD_EXECUTABLE(SpectrogramComponent_test SpectrogramComponent_test.cpp)
+TARGET_LINK_LIBRARIES(SpectrogramComponent_test comp_gpp_phy_spectrogram_static ${Boost_LIBRARIES} ${LIQUIDDSP_LIBRARIES})
+ADD_TEST(SpectrogramComponent_test SpectrogramComponent_test)
