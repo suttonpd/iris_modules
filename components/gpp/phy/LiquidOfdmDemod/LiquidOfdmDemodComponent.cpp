@@ -32,6 +32,7 @@
  * work.
  *
  */
+
 #include "irisapi/LibraryDefs.h"
 #include "irisapi/Version.h"
 #include "LiquidOfdmDemodComponent.h"
@@ -69,7 +70,7 @@ IRIS_COMPONENT_EXPORTS(PhyComponent, LiquidOfdmDemodComponent);
 
 
 LiquidOfdmDemodComponent::LiquidOfdmDemodComponent(string name):
-    PhyComponent(name, "liquidofdmdemodphycomponent", "A OFDM modulation component using libliquid.", "Andre Puschmann", "0.1")
+    PhyComponent(name, "liquidofdmdemodphycomponent", "A OFDM demodulation component using liquid-dsp.", "Andre Puschmann", "0.1")
     ,totalFrames_(0)
     ,errorFrames_(0)
     ,frameSyncronizer_(0)
@@ -99,7 +100,7 @@ LiquidOfdmDemodComponent::~LiquidOfdmDemodComponent()
     LOG(LINFO) << "Corrupted frames: " << errorFrames_;
     if (totalFrames_ > 0) {
         float errorRate = static_cast<float>(errorFrames_) / static_cast<float>(totalFrames_);
-        LOG(LINFO) << "Frame Error Rate: " << errorRate;
+        LOG(LINFO) << boost::str(boost::format("Frame error rate: %.2f") % errorRate);
     }
 }
 
@@ -129,7 +130,6 @@ void LiquidOfdmDemodComponent::initialize()
                                                   liquidofdmdemoddetail::gCallback,
                                                   this);
     ofdmflexframesync_print(frameSyncronizer_);
-
 }
 
 
@@ -142,44 +142,43 @@ void LiquidOfdmDemodComponent::callback(unsigned char * _header,
                                         framesyncstats_s _stats,
                                         void * _userdata)
 {
-  if(_header_valid)
-  {
-    uint16_t address = (_header[0] << 8 | _header[1]);
-    if(address == localAddress_x)
+    if (_header_valid)
     {
-      LOG(LDEBUG) << "Dropping own transmission";
-      return;
+        uint16_t address = (_header[0] << 8 | _header[1]);
+        if (address == localAddress_x)
+        {
+            LOG(LDEBUG) << "Dropping own transmission";
+            return;
+        }
+        else
+        {
+            totalFrames_++;
+            frameStats_ = _stats;
+
+            if (debug_x)
+            {
+                LOG(LDEBUG) << "Frame received: rssi = " << _stats.rssi
+                            << " dB, evm = " << _stats.evm
+                            << " dB, cfo = " << _stats.cfo;
+                LOG(LDEBUG) << "Header: " << (_header_valid ? "valid" : "INVALID")
+                            << ", Payload: " << (_payload_valid ? "valid" : "INVALID");
+            }
+
+            // create output data set if frame was received successfully
+            if (_header_valid && _payload_valid) {
+                DataSet< uint8_t>* out;
+                getOutputDataSet("output1", out, _payload_len);
+                out->sampleRate = sampleRate_;
+                out->timeStamp = timeStamp_;
+                std::copy(_payload, _payload + _payload_len, out->data.begin());
+                releaseOutputDataSet("output1", out);
+            }
+            else {
+                errorFrames_++;
+                LOG(LDEBUG) << "Frame invalid";
+            }
+        }
     }
-    else
-    {
-      totalFrames_++;
-      frameStats_ = _stats;
-
-      if (debug_x)
-      {
-          LOG(LDEBUG) << "Frame received: rssi = " << _stats.rssi
-                      << " dB, evm = " << _stats.evm
-                      << " dB, cfo = " << _stats.cfo;
-          LOG(LDEBUG) << "Header: " << (_header_valid ? "valid" : "INVALID")
-                      << ", Payload: " << (_payload_valid ? "valid" : "INVALID");
-      }
-
-
-      // create output data set if frame was received successfully
-      if (_header_valid && _payload_valid) {
-          DataSet< uint8_t>* out;
-          getOutputDataSet("output1", out, _payload_len);
-          out->sampleRate = sampleRate_;
-          out->timeStamp = timeStamp_;
-          std::copy(_payload, _payload + _payload_len, out->data.begin());
-          releaseOutputDataSet("output1", out);
-      }
-      else {
-          errorFrames_++;
-          LOG(LDEBUG) << "Frame invalid";
-      }
-    }
-  }
 }
 
 
