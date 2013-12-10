@@ -111,22 +111,6 @@ void AlohaMacComponent::stop()
   txThread_->join();
 }
 
-
-void AlohaMacComponent::registerPorts()
-{
-  std::vector<int> types;
-  types.push_back( int(TypeInfo< uint8_t >::identifier) );
-
-  //The ports on top of the component
-  registerOutputPort("topoutputport",types);
-  registerInputPort("topinputport", types);
-
-  //The ports below the component
-  registerInputPort("bottominputport", types);
-  registerOutputPort("bottomoutputport", types);
-}
-
-
 void AlohaMacComponent::rxThreadFunction()
 {
   boost::this_thread::sleep(boost::posix_time::seconds(1));
@@ -153,7 +137,7 @@ void AlohaMacComponent::rxThreadFunction()
           // check if packet contains new data
           if (newPacket.seqno() > rxSeqNo_ || newPacket.seqno() == 1) {
             // send new data packet up
-            sendDownwards("topoutputport", frame);
+            sendUpwards(frame);
             rxSeqNo_ = newPacket.seqno(); // update seqno
             if (newPacket.seqno() == 1) LOG(LINFO) << "Receiver restart detected.";
           }
@@ -265,7 +249,7 @@ void AlohaMacComponent::sendAckPacket(const string destination, uint32_t seqno)
   StackHelper::mergeAndSerializeDataset(buffer, ackPacket);
   //StackHelper::printDataset(buffer, "ACK Tx");
 
-  sendDownwards("bottomoutputport", buffer);
+  sendDownwards(buffer);
   LOG(LINFO) << "Tx  ACK  " << seqno;
 }
 

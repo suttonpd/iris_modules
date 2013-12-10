@@ -20,27 +20,10 @@
 # and at http://www.gnu.org/licenses/.
 #
 
-# - Try to find iris - the software radio framework
-# Once done this will define
-#  IRIS_FOUND - System has iris
-#  IRIS_INCLUDE_DIRS - The iris include directories
-#  IRIS_DEFINITIONS - Compiler switches required for using iris
-
-find_package(PkgConfig)
-pkg_check_modules(PC_IRIS QUIET iris_core)
-set(IRIS_DEFINITIONS ${PC_IRIS_CFLAGS_OTHER})
-
-find_path(IRIS_INCLUDE_DIR 
-            NAMES irisapi/Version.h
-            HINTS ${PC_IRIS_INCLUDEDIR} ${PC_IRIS_INCLUDE_DIRS} $ENV{IRIS_DIR}/include ${IRIS_CORE_SOURCE_DIR}
-            PATHS /usr/local/include 
-                  /usr/include )
-
-set(IRIS_INCLUDE_DIRS ${IRIS_INCLUDE_DIR} )
-
-include(FindPackageHandleStandardArgs)
-# handle the QUIETLY and REQUIRED arguments and set IRIS_FOUND to TRUE
-# if all listed variables are TRUE
-find_package_handle_standard_args(IRIS DEFAULT_MSG IRIS_INCLUDE_DIR)
-
-mark_as_advanced(IRIS_INCLUDE_DIR )
+########################################################################
+# Build executable, register as test
+########################################################################
+ADD_DEFINITIONS(-DBOOST_TEST_DYN_LINK -DBOOST_TEST_MAIN)
+ADD_EXECUTABLE(LiquidOfdmModComponent_test LiquidOfdmModComponent_test.cpp)
+TARGET_LINK_LIBRARIES(LiquidOfdmModComponent_test comp_gpp_phy_liquidofdmmod_static ${Boost_LIBRARIES} ${FFTW3F_LIBRARIES})
+ADD_TEST(LiquidOfdmModComponent_test LiquidOfdmModComponent_test)
