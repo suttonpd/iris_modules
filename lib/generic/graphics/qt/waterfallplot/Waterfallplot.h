@@ -8,7 +8,7 @@ class WaterfallplotWrapper;
 class Waterfallplot
 {
 public:
-  Waterfallplot(int numDataPoints, int numRows);
+  Waterfallplot(int numDataPoints, int numRows, std::string title="");
   ~Waterfallplot();
 
   template<class Iterator>

@@ -9,7 +9,7 @@ class ScatterplotWrapper;
 class Scatterplot
 {
 public:
-  Scatterplot();
+  Scatterplot(std::string title="");
   ~Scatterplot();
 
   template<class Iterator>

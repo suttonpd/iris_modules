@@ -3,9 +3,10 @@
 
 using namespace std;
 
-Complexplot::Complexplot()
+Complexplot::Complexplot(std::string title)
 {
   plot_ = new ComplexplotWrapper;
+  setTitle(title);
 }
 
 Complexplot::~Complexplot()

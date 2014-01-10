@@ -16,7 +16,7 @@ public:
     Magnitude,
     Phase
   };
-  Complexplot();
+  Complexplot(std::string title="");
   ~Complexplot();
 
   template<class Iterator>

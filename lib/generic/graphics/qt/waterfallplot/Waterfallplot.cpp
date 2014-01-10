@@ -3,9 +3,10 @@
 
 using namespace std;
 
-Waterfallplot::Waterfallplot(int numDataPoints, int numRows)
+Waterfallplot::Waterfallplot(int numDataPoints, int numRows, std::string title)
 {
   plot_ = new WaterfallplotWrapper(numDataPoints, numRows);
+  setTitle(title);
 }
 
 Waterfallplot::~Waterfallplot()

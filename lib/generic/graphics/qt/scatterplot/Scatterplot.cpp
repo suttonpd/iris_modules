@@ -1,9 +1,10 @@
 #include "Scatterplot.h"
 #include "ScatterplotWrapper.h"
 
-Scatterplot::Scatterplot()
+Scatterplot::Scatterplot(std::string title)
 {
   plot_ = new ScatterplotWrapper;
+  setTitle(title);
 }
 
 Scatterplot::~Scatterplot()

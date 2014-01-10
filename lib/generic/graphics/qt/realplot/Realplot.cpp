@@ -1,9 +1,10 @@
 #include "Realplot.h"
 #include "RealplotWrapper.h"
 
-Realplot::Realplot()
+Realplot::Realplot(std::string title)
 {
   plot_ = new RealplotWrapper;
+  setTitle(title);
 }
 
 Realplot::~Realplot()

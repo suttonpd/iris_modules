@@ -8,7 +8,7 @@ class RealplotWrapper;
 class Realplot
 {
 public:
-  Realplot();
+  Realplot(std::string title="");
   ~Realplot();
 
   template<class Iterator>
