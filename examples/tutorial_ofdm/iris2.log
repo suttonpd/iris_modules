@@ -1,0 +1,673 @@
+2014-Jan-08 11:47:06.847710 [INFO]    System: Loading radio: ofdm_tx_pgen_to_usrp.xml
+2014-Jan-08 11:47:06.848846 [INFO]    XmlParser: Parsed engine: stackengine1
+2014-Jan-08 11:47:06.848881 [INFO]    XmlParser: Parsed component: packetgenerator1
+2014-Jan-08 11:47:06.848922 [INFO]    XmlParser: Parsed engine: phyengine1
+2014-Jan-08 11:47:06.848953 [INFO]    XmlParser: Parsed component: ofdmmod1
+2014-Jan-08 11:47:06.848986 [INFO]    XmlParser: Parsed component: signalscaler1
+2014-Jan-08 11:47:06.849018 [INFO]    XmlParser: Parsed component: usrptx1
+2014-Jan-08 11:47:06.849066 [INFO]    XmlParser: Parsed link: packetgenerator1 . bottomport1 -> ofdmmod1 . input1
+2014-Jan-08 11:47:06.849098 [INFO]    XmlParser: Parsed link: ofdmmod1 . output1 -> signalscaler1 . input1
+2014-Jan-08 11:47:06.849126 [INFO]    XmlParser: Parsed link: signalscaler1 . output1 -> usrptx1 . input1
+2014-Jan-08 11:47:06.850886 [FATAL]   StackComponentManager: Could not find component packetgenerator in repositories.
+2014-Jan-08 11:47:06.852447 [FATAL]   System: Error loading radio: Could not find component packetgenerator in repositories.
+2014-Jan-08 11:48:15.036115 [INFO]    System: Loading radio: ofdm_tx_pgen_to_usrp.xml
+2014-Jan-08 11:48:15.037018 [INFO]    XmlParser: Parsed engine: stackengine1
+2014-Jan-08 11:48:15.037043 [INFO]    XmlParser: Parsed component: packetgenerator1
+2014-Jan-08 11:48:15.037074 [INFO]    XmlParser: Parsed engine: phyengine1
+2014-Jan-08 11:48:15.037089 [INFO]    XmlParser: Parsed component: ofdmmod1
+2014-Jan-08 11:48:15.037109 [INFO]    XmlParser: Parsed component: signalscaler1
+2014-Jan-08 11:48:15.037132 [INFO]    XmlParser: Parsed component: usrptx1
+2014-Jan-08 11:48:15.037170 [INFO]    XmlParser: Parsed link: packetgenerator1 . bottomport1 -> ofdmmod1 . input1
+2014-Jan-08 11:48:15.037196 [INFO]    XmlParser: Parsed link: ofdmmod1 . output1 -> signalscaler1 . input1
+2014-Jan-08 11:48:15.037215 [INFO]    XmlParser: Parsed link: signalscaler1 . output1 -> usrptx1 . input1
+2014-Jan-08 11:48:15.290358 [INFO]    usrptx1: Creating the usrp device with args: 
+2014-Jan-08 11:48:17.096034 [INFO]    usrptx1: Using Device: Single USRP:
+  Device: USRP2 / N-Series Device
+  Mboard 0: USRP2 r3
+  RX Channel: 0
+    RX DSP: 0
+    RX Dboard: A
+    RX Subdev: SBXv3 RX
+  TX Channel: 0
+    TX DSP: 0
+    TX Dboard: A
+    TX Subdev: SBXv3 TX
+
+2014-Jan-08 11:48:17.096146 [INFO]    usrptx1: Setting TX Rate: 1Msps...
+2014-Jan-08 11:48:17.098861 [INFO]    usrptx1: Actual TX Rate: 1Msps...
+2014-Jan-08 11:48:17.098945 [INFO]    usrptx1: Setting TX Frequency: 2495MHz...
+2014-Jan-08 11:48:17.125187 [INFO]    usrptx1: Actual TX Frequency: 2495MHz
+2014-Jan-08 11:48:17.125236 [INFO]    usrptx1: RX LO offset: 2MHz...
+2014-Jan-08 11:48:17.125265 [INFO]    usrptx1: Setting device timestamp to 0...
+2014-Jan-08 11:48:17.130446 [INFO]    usrptx1: Gain range: (0, 31.5, 0.5)
+
+2014-Jan-08 11:48:17.130474 [INFO]    usrptx1: Setting TX Gain: 1 dB...
+2014-Jan-08 11:48:17.133157 [INFO]    usrptx1: Actual TX Gain: 1 dB...
+2014-Jan-08 11:48:17.133194 [INFO]    usrptx1: Using TX Antenna: TX/RX
+2014-Jan-08 11:48:18.139510 [INFO]    usrptx1: Checking TX: LO: locked ...
+2014-Jan-08 11:48:18.162616 [INFO]    System: Starting radio
+2014-Jan-08 11:51:37.658625 [INFO]    System: Reconfiguring radio: ofdm_tx_pgen_to_usrp.xml
+2014-Jan-08 11:51:37.659225 [INFO]    XmlParser: Parsed engine: stackengine1
+2014-Jan-08 11:51:37.659303 [INFO]    XmlParser: Parsed component: packetgenerator1
+2014-Jan-08 11:51:37.659391 [INFO]    XmlParser: Parsed engine: phyengine1
+2014-Jan-08 11:51:37.659444 [INFO]    XmlParser: Parsed component: ofdmmod1
+2014-Jan-08 11:51:37.659513 [INFO]    XmlParser: Parsed component: signalscaler1
+2014-Jan-08 11:51:37.659593 [INFO]    XmlParser: Parsed component: usrptx1
+2014-Jan-08 11:51:37.659716 [INFO]    XmlParser: Parsed link: packetgenerator1 . bottomport1 -> ofdmmod1 . input1
+2014-Jan-08 11:51:37.659788 [INFO]    XmlParser: Parsed link: ofdmmod1 . output1 -> signalscaler1 . input1
+2014-Jan-08 11:51:37.659868 [INFO]    XmlParser: Parsed link: signalscaler1 . output1 -> usrptx1 . input1
+2014-Jan-08 11:52:00.246711 [INFO]    usrptx1: Setting TX Frequency: 2490.5MHz...
+2014-Jan-08 11:52:00.262631 [INFO]    usrptx1: Actual TX Frequency: 2490.5MHz
+2014-Jan-08 11:52:00.262748 [INFO]    phyengine1: Reconfigured parameter frequency : 2490500000
+2014-Jan-08 12:00:12.394934 [INFO]    System: Reconfiguring radio: ofdm_tx_pgen_to_usrp.xml
+2014-Jan-08 12:00:12.395587 [INFO]    XmlParser: Parsed engine: stackengine1
+2014-Jan-08 12:00:12.395664 [INFO]    XmlParser: Parsed component: packetgenerator1
+2014-Jan-08 12:00:12.395754 [INFO]    XmlParser: Parsed engine: phyengine1
+2014-Jan-08 12:00:12.395807 [INFO]    XmlParser: Parsed component: ofdmmod1
+2014-Jan-08 12:00:12.395876 [INFO]    XmlParser: Parsed component: signalscaler1
+2014-Jan-08 12:00:12.395955 [INFO]    XmlParser: Parsed component: usrptx1
+2014-Jan-08 12:00:12.396078 [INFO]    XmlParser: Parsed link: packetgenerator1 . bottomport1 -> ofdmmod1 . input1
+2014-Jan-08 12:00:12.396149 [INFO]    XmlParser: Parsed link: ofdmmod1 . output1 -> signalscaler1 . input1
+2014-Jan-08 12:00:12.396216 [INFO]    XmlParser: Parsed link: signalscaler1 . output1 -> usrptx1 . input1
+2014-Jan-08 12:00:15.247518 [INFO]    usrptx1: Setting TX Frequency: 2092.5MHz...
+2014-Jan-08 12:00:15.259323 [INFO]    usrptx1: Actual TX Frequency: 2092.5MHz
+2014-Jan-08 12:00:15.259424 [INFO]    phyengine1: Reconfigured parameter frequency : 2092500000
+2014-Jan-08 12:01:36.163239 [INFO]    System: Stopping radio
+2014-Jan-08 12:01:36.163611 [INFO]    StackOutTranslator: Thread in stack output translator interrupted
+2014-Jan-08 12:01:36.164535 [INFO]    packetgenerator1: Thread in stack component packetgenerator1 interrupted
+2014-Jan-08 12:01:36.164862 [INFO]    phyengine1: Thread in Engine phyengine1 interrupted
+2014-Jan-08 12:01:36.165007 [INFO]    System: Unloading radio
+2014-Jan-08 12:01:36.165323 [INFO]    ofdmmod1: Average time taken per process() call = 00:00:03.445050
+2014-Jan-08 12:01:36.165480 [INFO]    signalscaler1: Average time taken per process() call = 00:00:00.001699
+2014-Jan-08 12:01:36.863961 [INFO]    usrptx1: Average time taken per process() call = 00:00:00.000350
+2014-Jan-08 14:53:33.582174 [INFO]    System: Loading radio: tutofdm_packetgen_loop.xml
+2014-Jan-08 14:53:33.582857 [INFO]    XmlParser: Parsed engine: stackengine1
+2014-Jan-08 14:53:33.582953 [INFO]    XmlParser: Parsed component: packetgenerator1
+2014-Jan-08 14:53:33.583062 [INFO]    XmlParser: Parsed engine: phyengine1
+2014-Jan-08 14:53:33.583122 [INFO]    XmlParser: Parsed component: tutofdmmod1
+2014-Jan-08 14:53:33.583294 [INFO]    XmlParser: Parsed component: ofdmdemod1
+2014-Jan-08 14:53:33.583460 [INFO]    XmlParser: Parsed link: packetgenerator1 . bottomport1 -> ofdmmod1 . input1
+2014-Jan-08 14:53:33.583545 [INFO]    XmlParser: Parsed link: ofdmmod1 . output1 -> ofdmdemod1 . input1
+2014-Jan-08 14:53:33.583619 [INFO]    XmlParser: Parsed link: ofdmdemod1 . output1 -> packetgenerator1 . bottomport1
+2014-Jan-08 14:53:33.583951 [FATAL]   System: Error loading radio: Could not find component ofdmmod1 referenced by link
+2014-Jan-08 14:53:56.649080 [INFO]    System: Loading radio: tutofdm_packetgen_loop.xml
+2014-Jan-08 14:53:56.650194 [INFO]    XmlParser: Parsed engine: stackengine1
+2014-Jan-08 14:53:56.650315 [INFO]    XmlParser: Parsed component: packetgenerator1
+2014-Jan-08 14:53:56.650457 [INFO]    XmlParser: Parsed engine: phyengine1
+2014-Jan-08 14:53:56.650542 [INFO]    XmlParser: Parsed component: tutofdmmod1
+2014-Jan-08 14:53:56.650671 [INFO]    XmlParser: Parsed component: ofdmdemod1
+2014-Jan-08 14:53:56.650947 [INFO]    XmlParser: Parsed link: packetgenerator1 . bottomport1 -> tutofdmmod1 . input1
+2014-Jan-08 14:53:56.651125 [INFO]    XmlParser: Parsed link: tutofdmmod1 . output1 -> ofdmdemod1 . input1
+2014-Jan-08 14:53:56.651314 [INFO]    XmlParser: Parsed link: ofdmdemod1 . output1 -> packetgenerator1 . bottomport1
+2014-Jan-08 14:53:56.653009 [FATAL]   System: Error loading radio: The graph must be a DAG.
+2014-Jan-08 14:54:44.813365 [INFO]    System: Loading radio: tutofdm_packetgen_loop.xml
+2014-Jan-08 14:54:44.813860 [INFO]    XmlParser: Parsed engine: stackengine1
+2014-Jan-08 14:54:44.813887 [INFO]    XmlParser: Parsed component: packetgenerator1
+2014-Jan-08 14:54:44.813921 [INFO]    XmlParser: Parsed engine: phyengine1
+2014-Jan-08 14:54:44.813938 [INFO]    XmlParser: Parsed component: tutofdmmod1
+2014-Jan-08 14:54:44.813970 [INFO]    XmlParser: Parsed component: ofdmdemod1
+2014-Jan-08 14:54:44.813999 [INFO]    XmlParser: Parsed component: filerawwriter1
+2014-Jan-08 14:54:44.814072 [INFO]    XmlParser: Parsed link: packetgenerator1 . bottomport1 -> tutofdmmod1 . input1
+2014-Jan-08 14:54:44.814111 [INFO]    XmlParser: Parsed link: tutofdmmod1 . output1 -> ofdmdemod1 . input1
+2014-Jan-08 14:54:44.814137 [INFO]    XmlParser: Parsed link: ofdmdemod1 . output1 -> filerawwriter1 . input1
+2014-Jan-08 14:54:45.047594 [INFO]    System: Starting radio
+2014-Jan-08 14:55:19.781627 [INFO]    System: Stopping radio
+2014-Jan-08 14:55:19.782095 [INFO]    StackOutTranslator: Thread in stack output translator interrupted
+2014-Jan-08 14:55:19.782928 [INFO]    packetgenerator1: Thread in stack component packetgenerator1 interrupted
+2014-Jan-08 14:55:19.783384 [INFO]    phyengine1: Thread in Engine phyengine1 interrupted
+2014-Jan-08 14:55:19.783603 [INFO]    System: Unloading radio
+2014-Jan-08 14:55:19.783905 [INFO]    tutofdmmod1: Average time taken per process() call = 00:00:00.640440
+2014-Jan-08 14:55:19.784156 [INFO]    ofdmdemod1: Average time taken per process() call = 00:00:00.001665
+2014-Jan-08 14:55:19.784485 [INFO]    filerawwriter1: Average time taken per process() call = 00:00:00.000047
+2014-Jan-08 15:59:15.580451 [INFO]    System: Loading radio: tutofdm_packetgen_loop.xml
+2014-Jan-08 15:59:15.580895 [INFO]    XmlParser: Parsed engine: stackengine1
+2014-Jan-08 15:59:15.580930 [INFO]    XmlParser: Parsed component: packetgenerator1
+2014-Jan-08 15:59:15.580972 [INFO]    XmlParser: Parsed engine: phyengine1
+2014-Jan-08 15:59:15.580995 [INFO]    XmlParser: Parsed component: tutofdmmod1
+2014-Jan-08 15:59:15.581037 [INFO]    XmlParser: Parsed component: ofdmdemod1
+2014-Jan-08 15:59:15.581074 [INFO]    XmlParser: Parsed component: filerawwriter1
+2014-Jan-08 15:59:15.581130 [INFO]    XmlParser: Parsed link: packetgenerator1 . bottomport1 -> tutofdmmod1 . input1
+2014-Jan-08 15:59:15.581164 [INFO]    XmlParser: Parsed link: tutofdmmod1 . output1 -> ofdmdemod1 . input1
+2014-Jan-08 15:59:15.581190 [INFO]    XmlParser: Parsed link: ofdmdemod1 . output1 -> filerawwriter1 . input1
+2014-Jan-08 15:59:15.987195 [INFO]    System: Starting radio
+2014-Jan-08 16:00:57.082208 [INFO]    System: Stopping radio
+2014-Jan-08 16:00:57.082611 [INFO]    StackOutTranslator: Thread in stack output translator interrupted
+2014-Jan-08 16:00:57.082960 [INFO]    packetgenerator1: Thread in stack component packetgenerator1 interrupted
+2014-Jan-08 16:00:57.083309 [INFO]    phyengine1: Thread in Engine phyengine1 interrupted
+2014-Jan-08 16:00:57.083465 [INFO]    System: Unloading radio
+2014-Jan-08 16:00:57.083747 [INFO]    tutofdmmod1: Average time taken per process() call = 00:00:04.443602
+2014-Jan-08 16:00:57.084003 [INFO]    ofdmdemod1: Average time taken per process() call = 00:00:00.002095
+2014-Jan-08 16:00:57.084245 [INFO]    filerawwriter1: Average time taken per process() call = 00:00:00.000036
+2014-Jan-09 12:05:07.197968 [INFO]    System: Loading radio: tutofdm_packetgen_loop.xml
+2014-Jan-09 12:05:07.212491 [INFO]    XmlParser: Parsed engine: stackengine1
+2014-Jan-09 12:05:07.212658 [INFO]    XmlParser: Parsed component: packetgenerator1
+2014-Jan-09 12:05:07.212800 [INFO]    XmlParser: Parsed engine: phyengine1
+2014-Jan-09 12:05:07.212844 [INFO]    XmlParser: Parsed component: tutofdmmod1
+2014-Jan-09 12:05:07.212951 [INFO]    XmlParser: Parsed component: ofdmdemod1
+2014-Jan-09 12:05:07.213060 [INFO]    XmlParser: Parsed component: filerawwriter1
+2014-Jan-09 12:05:07.213286 [INFO]    XmlParser: Parsed link: packetgenerator1 . bottomport1 -> tutofdmmod1 . input1
+2014-Jan-09 12:05:07.213390 [INFO]    XmlParser: Parsed link: tutofdmmod1 . output1 -> ofdmdemod1 . input1
+2014-Jan-09 12:05:07.213531 [INFO]    XmlParser: Parsed link: ofdmdemod1 . output1 -> filerawwriter1 . input1
+2014-Jan-09 12:05:07.595814 [INFO]    System: Starting radio
+2014-Jan-09 12:05:29.179535 [INFO]    System: Stopping radio
+2014-Jan-09 12:05:29.190641 [INFO]    StackOutTranslator: Thread in stack output translator interrupted
+2014-Jan-09 12:05:29.191104 [INFO]    packetgenerator1: Thread in stack component packetgenerator1 interrupted
+2014-Jan-09 12:05:29.191461 [INFO]    phyengine1: Thread in Engine phyengine1 interrupted
+2014-Jan-09 12:05:29.191635 [INFO]    System: Unloading radio
+2014-Jan-09 12:05:29.191894 [INFO]    tutofdmmod1: Average time taken per process() call = 00:00:00.898151
+2014-Jan-09 12:05:29.192137 [INFO]    ofdmdemod1: Average time taken per process() call = 00:00:00.000416
+2014-Jan-09 12:05:29.192389 [INFO]    filerawwriter1: Average time taken per process() call = 00:00:00.000008
+2014-Jan-09 12:11:36.596806 [INFO]    System: Loading radio: tutofdm_packetgen_loop.xml
+2014-Jan-09 12:11:36.597146 [INFO]    XmlParser: Parsed engine: stackengine1
+2014-Jan-09 12:11:36.597169 [INFO]    XmlParser: Parsed component: packetgenerator1
+2014-Jan-09 12:11:36.597201 [INFO]    XmlParser: Parsed engine: phyengine1
+2014-Jan-09 12:11:36.597219 [INFO]    XmlParser: Parsed component: tutofdmmod1
+2014-Jan-09 12:11:36.597252 [INFO]    XmlParser: Parsed component: ofdmdemod1
+2014-Jan-09 12:11:36.597282 [INFO]    XmlParser: Parsed component: filerawwriter1
+2014-Jan-09 12:11:36.597319 [INFO]    XmlParser: Parsed link: packetgenerator1 . bottomport1 -> tutofdmmod1 . input1
+2014-Jan-09 12:11:36.597342 [INFO]    XmlParser: Parsed link: tutofdmmod1 . output1 -> ofdmdemod1 . input1
+2014-Jan-09 12:11:36.597361 [INFO]    XmlParser: Parsed link: ofdmdemod1 . output1 -> filerawwriter1 . input1
+2014-Jan-09 12:11:36.798024 [INFO]    System: Starting radio
+2014-Jan-09 12:23:17.509965 [INFO]    System: Stopping radio
+2014-Jan-09 12:23:17.510151 [INFO]    StackOutTranslator: Thread in stack output translator interrupted
+2014-Jan-09 12:23:17.510520 [INFO]    packetgenerator1: Thread in stack component packetgenerator1 interrupted
+2014-Jan-09 12:23:17.510638 [INFO]    phyengine1: Thread in Engine phyengine1 interrupted
+2014-Jan-09 12:23:17.510705 [INFO]    System: Unloading radio
+2014-Jan-09 12:23:17.510822 [INFO]    tutofdmmod1: Average time taken per process() call = 00:00:07.702288
+2014-Jan-09 12:23:17.510929 [INFO]    ofdmdemod1: Average time taken per process() call = 00:00:00.000638
+2014-Jan-09 12:23:17.511037 [INFO]    filerawwriter1: Average time taken per process() call = 00:00:00.000018
+2014-Jan-09 12:33:11.935260 [INFO]    System: Loading radio: tutofdm_packetgen_loop.xml
+2014-Jan-09 12:33:11.935650 [INFO]    XmlParser: Parsed engine: stackengine1
+2014-Jan-09 12:33:11.935677 [INFO]    XmlParser: Parsed component: packetgenerator1
+2014-Jan-09 12:33:11.935710 [INFO]    XmlParser: Parsed engine: phyengine1
+2014-Jan-09 12:33:11.935727 [INFO]    XmlParser: Parsed component: tutofdmmod1
+2014-Jan-09 12:33:11.935759 [INFO]    XmlParser: Parsed component: tutofdmdemod1
+2014-Jan-09 12:33:11.935790 [INFO]    XmlParser: Parsed component: filerawwriter1
+2014-Jan-09 12:33:11.935828 [INFO]    XmlParser: Parsed link: packetgenerator1 . bottomport1 -> tutofdmmod1 . input1
+2014-Jan-09 12:33:11.935852 [INFO]    XmlParser: Parsed link: tutofdmmod1 . output1 -> tutofdmdemod1 . input1
+2014-Jan-09 12:33:11.935872 [INFO]    XmlParser: Parsed link: tutofdmdemod1 . output1 -> filerawwriter1 . input1
+2014-Jan-09 12:33:12.162503 [INFO]    System: Starting radio
+2014-Jan-09 12:34:00.331881 [INFO]    System: Loading radio: tutofdm_packetgen_loop.xml
+2014-Jan-09 12:34:00.332343 [INFO]    XmlParser: Parsed engine: stackengine1
+2014-Jan-09 12:34:00.332385 [INFO]    XmlParser: Parsed component: packetgenerator1
+2014-Jan-09 12:34:00.332436 [INFO]    XmlParser: Parsed engine: phyengine1
+2014-Jan-09 12:34:00.332463 [INFO]    XmlParser: Parsed component: tutofdmmod1
+2014-Jan-09 12:34:00.332514 [INFO]    XmlParser: Parsed component: tutofdmdemod1
+2014-Jan-09 12:34:00.332593 [INFO]    XmlParser: Parsed component: filerawwriter1
+2014-Jan-09 12:34:00.332658 [INFO]    XmlParser: Parsed link: packetgenerator1 . bottomport1 -> tutofdmmod1 . input1
+2014-Jan-09 12:34:00.332698 [INFO]    XmlParser: Parsed link: tutofdmmod1 . output1 -> tutofdmdemod1 . input1
+2014-Jan-09 12:34:00.332732 [INFO]    XmlParser: Parsed link: tutofdmdemod1 . output1 -> filerawwriter1 . input1
+2014-Jan-09 12:34:00.537789 [INFO]    System: Starting radio
+2014-Jan-09 12:50:55.384354 [INFO]    System: Loading radio: tutofdm_packetgen_loop.xml
+2014-Jan-09 12:50:55.385383 [INFO]    XmlParser: Parsed engine: stackengine1
+2014-Jan-09 12:50:55.385480 [INFO]    XmlParser: Parsed component: packetgenerator1
+2014-Jan-09 12:50:55.385579 [INFO]    XmlParser: Parsed engine: phyengine1
+2014-Jan-09 12:50:55.385615 [INFO]    XmlParser: Parsed component: tutofdmmod1
+2014-Jan-09 12:50:55.385653 [INFO]    XmlParser: Parsed component: tutofdmdemod1
+2014-Jan-09 12:50:55.385682 [INFO]    XmlParser: Parsed component: filerawwriter1
+2014-Jan-09 12:50:55.385721 [INFO]    XmlParser: Parsed link: packetgenerator1 . bottomport1 -> tutofdmmod1 . input1
+2014-Jan-09 12:50:55.385745 [INFO]    XmlParser: Parsed link: tutofdmmod1 . output1 -> tutofdmdemod1 . input1
+2014-Jan-09 12:50:55.385765 [INFO]    XmlParser: Parsed link: tutofdmdemod1 . output1 -> filerawwriter1 . input1
+2014-Jan-09 12:50:55.628126 [INFO]    System: Starting radio
+2014-Jan-09 12:52:54.324787 [INFO]    System: Stopping radio
+2014-Jan-09 12:52:54.324972 [INFO]    StackOutTranslator: Thread in stack output translator interrupted
+2014-Jan-09 12:52:54.325374 [INFO]    packetgenerator1: Thread in stack component packetgenerator1 interrupted
+2014-Jan-09 12:52:54.325539 [INFO]    phyengine1: Thread in Engine phyengine1 interrupted
+2014-Jan-09 12:52:54.325616 [INFO]    System: Unloading radio
+2014-Jan-09 12:52:54.325733 [INFO]    tutofdmmod1: Average time taken per process() call = 00:00:01.441069
+2014-Jan-09 12:52:54.325855 [INFO]    tutofdmdemod1: Average time taken per process() call = 00:00:00.001641
+2014-Jan-09 12:52:54.325969 [INFO]    filerawwriter1: Average time taken per process() call = 00:00:00.000055
+2014-Jan-09 12:53:49.852615 [INFO]    System: Loading radio: tutofdm_packetgen_loop.xml
+2014-Jan-09 12:53:49.854083 [INFO]    XmlParser: Parsed engine: stackengine1
+2014-Jan-09 12:53:49.854272 [INFO]    XmlParser: Parsed component: packetgenerator1
+2014-Jan-09 12:53:49.854470 [INFO]    XmlParser: Parsed engine: phyengine1
+2014-Jan-09 12:53:49.854581 [INFO]    XmlParser: Parsed component: tutofdmmod1
+2014-Jan-09 12:53:49.854824 [INFO]    XmlParser: Parsed component: tutofdmdemod1
+2014-Jan-09 12:53:49.855048 [INFO]    XmlParser: Parsed component: filerawwriter1
+2014-Jan-09 12:53:49.855314 [INFO]    XmlParser: Parsed link: packetgenerator1 . bottomport1 -> tutofdmmod1 . input1
+2014-Jan-09 12:53:49.855550 [INFO]    XmlParser: Parsed link: tutofdmmod1 . output1 -> tutofdmdemod1 . input1
+2014-Jan-09 12:53:49.855729 [INFO]    XmlParser: Parsed link: tutofdmdemod1 . output1 -> filerawwriter1 . input1
+2014-Jan-09 12:53:50.108166 [INFO]    System: Starting radio
+2014-Jan-09 12:54:40.472135 [INFO]    System: Stopping radio
+2014-Jan-09 12:54:40.472350 [INFO]    StackOutTranslator: Thread in stack output translator interrupted
+2014-Jan-09 12:54:40.473660 [INFO]    packetgenerator1: Thread in stack component packetgenerator1 interrupted
+2014-Jan-09 12:54:40.474140 [INFO]    phyengine1: Thread in Engine phyengine1 interrupted
+2014-Jan-09 12:54:40.474389 [INFO]    System: Unloading radio
+2014-Jan-09 12:54:40.474691 [INFO]    tutofdmmod1: Average time taken per process() call = 00:00:01.437930
+2014-Jan-09 12:54:40.474950 [INFO]    tutofdmdemod1: Average time taken per process() call = 00:00:00.001643
+2014-Jan-09 12:54:40.475240 [INFO]    filerawwriter1: Average time taken per process() call = 00:00:00.000056
+2014-Jan-09 12:55:59.223651 [INFO]    System: Loading radio: tutofdm_packetgen_loop.xml
+2014-Jan-09 12:55:59.224773 [INFO]    XmlParser: Parsed engine: stackengine1
+2014-Jan-09 12:55:59.225002 [INFO]    XmlParser: Parsed component: packetgenerator1
+2014-Jan-09 12:55:59.225206 [INFO]    XmlParser: Parsed engine: phyengine1
+2014-Jan-09 12:55:59.225274 [INFO]    XmlParser: Parsed component: tutofdmmod1
+2014-Jan-09 12:55:59.225321 [INFO]    XmlParser: Parsed component: tutofdmdemod1
+2014-Jan-09 12:55:59.225357 [INFO]    XmlParser: Parsed component: filerawwriter1
+2014-Jan-09 12:55:59.225405 [INFO]    XmlParser: Parsed link: packetgenerator1 . bottomport1 -> tutofdmmod1 . input1
+2014-Jan-09 12:55:59.225437 [INFO]    XmlParser: Parsed link: tutofdmmod1 . output1 -> tutofdmdemod1 . input1
+2014-Jan-09 12:55:59.225471 [INFO]    XmlParser: Parsed link: tutofdmdemod1 . output1 -> filerawwriter1 . input1
+2014-Jan-09 12:55:59.450751 [INFO]    System: Starting radio
+2014-Jan-09 12:56:17.861092 [INFO]    System: Stopping radio
+2014-Jan-09 12:56:17.861611 [INFO]    StackOutTranslator: Thread in stack output translator interrupted
+2014-Jan-09 12:56:17.862587 [INFO]    packetgenerator1: Thread in stack component packetgenerator1 interrupted
+2014-Jan-09 12:56:17.863008 [INFO]    phyengine1: Thread in Engine phyengine1 interrupted
+2014-Jan-09 12:56:25.465848 [INFO]    System: Unloading radio
+2014-Jan-09 12:56:25.466271 [INFO]    tutofdmmod1: Average time taken per process() call = 00:00:05.918171
+2014-Jan-09 12:56:25.466576 [INFO]    tutofdmdemod1: Average time taken per process() call = 00:00:00.001532
+2014-Jan-09 12:56:25.466823 [INFO]    filerawwriter1: Average time taken per process() call = 00:00:00.000055
+2014-Jan-09 12:57:08.813471 [INFO]    System: Loading radio: tutofdm_packetgen_loop.xml
+2014-Jan-09 12:57:08.813904 [INFO]    XmlParser: Parsed engine: stackengine1
+2014-Jan-09 12:57:08.813929 [INFO]    XmlParser: Parsed component: packetgenerator1
+2014-Jan-09 12:57:08.813962 [INFO]    XmlParser: Parsed engine: phyengine1
+2014-Jan-09 12:57:08.813979 [INFO]    XmlParser: Parsed component: tutofdmmod1
+2014-Jan-09 12:57:08.814015 [INFO]    XmlParser: Parsed component: tutofdmdemod1
+2014-Jan-09 12:57:08.814044 [INFO]    XmlParser: Parsed component: filerawwriter1
+2014-Jan-09 12:57:08.814083 [INFO]    XmlParser: Parsed link: packetgenerator1 . bottomport1 -> tutofdmmod1 . input1
+2014-Jan-09 12:57:08.814107 [INFO]    XmlParser: Parsed link: tutofdmmod1 . output1 -> tutofdmdemod1 . input1
+2014-Jan-09 12:57:08.814127 [INFO]    XmlParser: Parsed link: tutofdmdemod1 . output1 -> filerawwriter1 . input1
+2014-Jan-09 12:57:09.025106 [INFO]    System: Starting radio
+2014-Jan-09 12:57:17.423066 [INFO]    System: Stopping radio
+2014-Jan-09 12:57:17.423536 [INFO]    StackOutTranslator: Thread in stack output translator interrupted
+2014-Jan-09 12:57:17.424403 [INFO]    packetgenerator1: Thread in stack component packetgenerator1 interrupted
+2014-Jan-09 12:57:17.424807 [INFO]    phyengine1: Thread in Engine phyengine1 interrupted
+2014-Jan-09 12:57:17.424979 [INFO]    System: Unloading radio
+2014-Jan-09 12:57:17.425292 [INFO]    tutofdmmod1: Average time taken per process() call = 00:00:02.191254
+2014-Jan-09 12:57:17.425554 [INFO]    tutofdmdemod1: Average time taken per process() call = 00:00:00.001045
+2014-Jan-09 12:57:17.425781 [INFO]    filerawwriter1: Average time taken per process() call = 00:00:00.000026
+2014-Jan-09 12:58:25.357272 [INFO]    System: Loading radio: tutofdm_packetgen_loop.xml
+2014-Jan-09 12:58:25.357714 [INFO]    XmlParser: Parsed engine: stackengine1
+2014-Jan-09 12:58:25.375146 [INFO]    XmlParser: Parsed component: packetgenerator1
+2014-Jan-09 12:58:25.375259 [INFO]    XmlParser: Parsed engine: phyengine1
+2014-Jan-09 12:58:25.375312 [INFO]    XmlParser: Parsed component: tutofdmmod1
+2014-Jan-09 12:58:25.375377 [INFO]    XmlParser: Parsed component: tutofdmdemod1
+2014-Jan-09 12:58:25.375436 [INFO]    XmlParser: Parsed component: filerawwriter1
+2014-Jan-09 12:58:25.375504 [INFO]    XmlParser: Parsed link: packetgenerator1 . bottomport1 -> tutofdmmod1 . input1
+2014-Jan-09 12:58:25.375552 [INFO]    XmlParser: Parsed link: tutofdmmod1 . output1 -> tutofdmdemod1 . input1
+2014-Jan-09 12:58:25.375595 [INFO]    XmlParser: Parsed link: tutofdmdemod1 . output1 -> filerawwriter1 . input1
+2014-Jan-09 12:58:25.502034 [INFO]    System: Starting radio
+2014-Jan-09 12:58:29.467245 [INFO]    System: Stopping radio
+2014-Jan-09 12:58:29.467524 [INFO]    StackOutTranslator: Thread in stack output translator interrupted
+2014-Jan-09 12:58:29.468429 [INFO]    packetgenerator1: Thread in stack component packetgenerator1 interrupted
+2014-Jan-09 12:58:29.468666 [INFO]    phyengine1: Thread in Engine phyengine1 interrupted
+2014-Jan-09 12:58:29.468814 [INFO]    System: Unloading radio
+2014-Jan-09 12:58:29.468971 [INFO]    tutofdmmod1: Average time taken per process() call = 00:00:02.235019
+2014-Jan-09 12:58:29.469068 [INFO]    tutofdmdemod1: Average time taken per process() call = 00:00:00.000178
+2014-Jan-09 12:58:29.469148 [INFO]    filerawwriter1: Average time taken per process() call = 00:00:00.000012
+2014-Jan-09 13:03:22.952822 [INFO]    System: Loading radio: tutofdm_packetgen_loop.xml
+2014-Jan-09 13:03:22.953647 [INFO]    XmlParser: Parsed engine: stackengine1
+2014-Jan-09 13:03:22.953729 [INFO]    XmlParser: Parsed component: packetgenerator1
+2014-Jan-09 13:03:22.953839 [INFO]    XmlParser: Parsed engine: phyengine1
+2014-Jan-09 13:03:22.953900 [INFO]    XmlParser: Parsed component: tutofdmmod1
+2014-Jan-09 13:03:22.954015 [INFO]    XmlParser: Parsed component: tutofdmdemod1
+2014-Jan-09 13:03:22.954116 [INFO]    XmlParser: Parsed component: filerawwriter1
+2014-Jan-09 13:03:22.954245 [INFO]    XmlParser: Parsed link: packetgenerator1 . bottomport1 -> tutofdmmod1 . input1
+2014-Jan-09 13:03:22.954329 [INFO]    XmlParser: Parsed link: tutofdmmod1 . output1 -> tutofdmdemod1 . input1
+2014-Jan-09 13:03:22.954400 [INFO]    XmlParser: Parsed link: tutofdmdemod1 . output1 -> filerawwriter1 . input1
+2014-Jan-09 13:03:23.454619 [INFO]    System: Starting radio
+2014-Jan-09 13:03:27.473309 [INFO]    System: Stopping radio
+2014-Jan-09 13:03:27.473787 [INFO]    StackOutTranslator: Thread in stack output translator interrupted
+2014-Jan-09 13:03:27.474725 [INFO]    packetgenerator1: Thread in stack component packetgenerator1 interrupted
+2014-Jan-09 13:03:27.475214 [INFO]    phyengine1: Thread in Engine phyengine1 interrupted
+2014-Jan-09 13:03:27.475424 [INFO]    System: Unloading radio
+2014-Jan-09 13:03:27.479163 [INFO]    tutofdmmod1: Average time taken per process() call = 00:00:01.966753
+2014-Jan-09 13:03:27.480682 [INFO]    tutofdmdemod1: Average time taken per process() call = 00:00:00.000461
+2014-Jan-09 13:03:27.481125 [INFO]    filerawwriter1: Average time taken per process() call = 00:00:00.000024
+2014-Jan-09 13:03:30.150856 [INFO]    System: Loading radio: tutofdm_packetgen_loop.xml
+2014-Jan-09 13:03:30.151209 [INFO]    XmlParser: Parsed engine: stackengine1
+2014-Jan-09 13:03:30.151236 [INFO]    XmlParser: Parsed component: packetgenerator1
+2014-Jan-09 13:03:30.151268 [INFO]    XmlParser: Parsed engine: phyengine1
+2014-Jan-09 13:03:30.151284 [INFO]    XmlParser: Parsed component: tutofdmmod1
+2014-Jan-09 13:03:30.151314 [INFO]    XmlParser: Parsed component: tutofdmdemod1
+2014-Jan-09 13:03:30.151342 [INFO]    XmlParser: Parsed component: filerawwriter1
+2014-Jan-09 13:03:30.151379 [INFO]    XmlParser: Parsed link: packetgenerator1 . bottomport1 -> tutofdmmod1 . input1
+2014-Jan-09 13:03:30.151401 [INFO]    XmlParser: Parsed link: tutofdmmod1 . output1 -> tutofdmdemod1 . input1
+2014-Jan-09 13:03:30.151419 [INFO]    XmlParser: Parsed link: tutofdmdemod1 . output1 -> filerawwriter1 . input1
+2014-Jan-09 13:03:30.414620 [INFO]    System: Starting radio
+2014-Jan-09 13:03:37.018589 [INFO]    System: Stopping radio
+2014-Jan-09 13:03:37.019048 [INFO]    StackOutTranslator: Thread in stack output translator interrupted
+2014-Jan-09 13:03:37.019953 [INFO]    packetgenerator1: Thread in stack component packetgenerator1 interrupted
+2014-Jan-09 13:03:37.020369 [INFO]    phyengine1: Thread in Engine phyengine1 interrupted
+2014-Jan-09 13:03:37.020560 [INFO]    System: Unloading radio
+2014-Jan-09 13:03:37.024975 [INFO]    tutofdmmod1: Average time taken per process() call = 00:00:03.737677
+2014-Jan-09 13:03:37.026910 [INFO]    tutofdmdemod1: Average time taken per process() call = 00:00:00.001517
+2014-Jan-09 13:03:37.027317 [INFO]    filerawwriter1: Average time taken per process() call = 00:00:00.000056
+2014-Jan-09 13:03:39.505789 [INFO]    System: Loading radio: tutofdm_packetgen_loop.xml
+2014-Jan-09 13:03:39.506998 [INFO]    XmlParser: Parsed engine: stackengine1
+2014-Jan-09 13:03:39.507142 [INFO]    XmlParser: Parsed component: packetgenerator1
+2014-Jan-09 13:03:39.507316 [INFO]    XmlParser: Parsed engine: phyengine1
+2014-Jan-09 13:03:39.507405 [INFO]    XmlParser: Parsed component: tutofdmmod1
+2014-Jan-09 13:03:39.507541 [INFO]    XmlParser: Parsed component: tutofdmdemod1
+2014-Jan-09 13:03:39.507668 [INFO]    XmlParser: Parsed component: filerawwriter1
+2014-Jan-09 13:03:39.507867 [INFO]    XmlParser: Parsed link: packetgenerator1 . bottomport1 -> tutofdmmod1 . input1
+2014-Jan-09 13:03:39.507983 [INFO]    XmlParser: Parsed link: tutofdmmod1 . output1 -> tutofdmdemod1 . input1
+2014-Jan-09 13:03:39.508077 [INFO]    XmlParser: Parsed link: tutofdmdemod1 . output1 -> filerawwriter1 . input1
+2014-Jan-09 13:03:39.732972 [INFO]    System: Starting radio
+2014-Jan-09 13:03:47.752839 [INFO]    System: Stopping radio
+2014-Jan-09 13:03:47.753045 [INFO]    StackOutTranslator: Thread in stack output translator interrupted
+2014-Jan-09 13:03:47.753431 [INFO]    packetgenerator1: Thread in stack component packetgenerator1 interrupted
+2014-Jan-09 13:03:47.753561 [INFO]    phyengine1: Thread in Engine phyengine1 interrupted
+2014-Jan-09 13:03:47.753642 [INFO]    System: Unloading radio
+2014-Jan-09 13:03:47.757829 [INFO]    tutofdmmod1: Average time taken per process() call = 00:00:00.516581
+2014-Jan-09 13:03:47.758664 [INFO]    tutofdmdemod1: Average time taken per process() call = 00:00:00.001014
+2014-Jan-09 13:03:47.758915 [INFO]    filerawwriter1: Average time taken per process() call = 00:00:00.000032
+2014-Jan-10 11:11:29.078805 [INFO]    System: Loading radio: tutofdm_packetgen_loop.xml
+2014-Jan-10 11:11:29.088594 [INFO]    XmlParser: Parsed engine: stackengine1
+2014-Jan-10 11:11:29.088694 [INFO]    XmlParser: Parsed component: packetgenerator1
+2014-Jan-10 11:11:29.088802 [INFO]    XmlParser: Parsed engine: phyengine1
+2014-Jan-10 11:11:29.088867 [INFO]    XmlParser: Parsed component: tutofdmmod1
+2014-Jan-10 11:11:29.088975 [INFO]    XmlParser: Parsed component: tutofdmdemod1
+2014-Jan-10 11:11:29.089076 [INFO]    XmlParser: Parsed component: filerawwriter1
+2014-Jan-10 11:11:29.089202 [INFO]    XmlParser: Parsed link: packetgenerator1 . bottomport1 -> tutofdmmod1 . input1
+2014-Jan-10 11:11:29.089310 [INFO]    XmlParser: Parsed link: tutofdmmod1 . output1 -> tutofdmdemod1 . input1
+2014-Jan-10 11:11:29.089388 [INFO]    XmlParser: Parsed link: tutofdmdemod1 . output1 -> filerawwriter1 . input1
+2014-Jan-10 11:11:29.549327 [INFO]    System: Starting radio
+2014-Jan-10 11:11:41.457439 [INFO]    System: Stopping radio
+2014-Jan-10 11:11:41.470061 [INFO]    StackOutTranslator: Thread in stack output translator interrupted
+2014-Jan-10 11:11:41.470859 [INFO]    packetgenerator1: Thread in stack component packetgenerator1 interrupted
+2014-Jan-10 11:11:41.471046 [INFO]    phyengine1: Thread in Engine phyengine1 interrupted
+2014-Jan-10 11:11:41.471295 [INFO]    System: Unloading radio
+2014-Jan-10 11:11:41.475134 [INFO]    tutofdmmod1: Average time taken per process() call = 00:00:01.047814
+2014-Jan-10 11:11:41.476398 [INFO]    tutofdmdemod1: Average time taken per process() call = 00:00:00.000438
+2014-Jan-10 11:11:41.476670 [INFO]    filerawwriter1: Average time taken per process() call = 00:00:00.000015
+2014-Jan-10 11:11:48.952251 [INFO]    System: Loading radio: tutofdm_packetgen_loop.xml
+2014-Jan-10 11:11:48.952643 [INFO]    XmlParser: Parsed engine: stackengine1
+2014-Jan-10 11:11:48.952685 [INFO]    XmlParser: Parsed component: packetgenerator1
+2014-Jan-10 11:11:48.952722 [INFO]    XmlParser: Parsed engine: phyengine1
+2014-Jan-10 11:11:48.952738 [INFO]    XmlParser: Parsed component: tutofdmmod1
+2014-Jan-10 11:11:48.952787 [INFO]    XmlParser: Parsed component: tutofdmdemod1
+2014-Jan-10 11:11:48.952815 [INFO]    XmlParser: Parsed component: filerawwriter1
+2014-Jan-10 11:11:48.952853 [INFO]    XmlParser: Parsed link: packetgenerator1 . bottomport1 -> tutofdmmod1 . input1
+2014-Jan-10 11:11:48.952876 [INFO]    XmlParser: Parsed link: tutofdmmod1 . output1 -> tutofdmdemod1 . input1
+2014-Jan-10 11:11:48.952895 [INFO]    XmlParser: Parsed link: tutofdmdemod1 . output1 -> filerawwriter1 . input1
+2014-Jan-10 11:11:49.203340 [INFO]    System: Starting radio
+2014-Jan-10 11:12:01.316494 [INFO]    System: Stopping radio
+2014-Jan-10 11:12:01.316887 [INFO]    StackOutTranslator: Thread in stack output translator interrupted
+2014-Jan-10 11:12:01.317963 [INFO]    packetgenerator1: Thread in stack component packetgenerator1 interrupted
+2014-Jan-10 11:12:01.318360 [INFO]    phyengine1: Thread in Engine phyengine1 interrupted
+2014-Jan-10 11:12:01.318575 [INFO]    System: Unloading radio
+2014-Jan-10 11:12:01.322924 [INFO]    tutofdmmod1: Average time taken per process() call = 00:00:04.381620
+2014-Jan-10 11:12:01.323914 [INFO]    tutofdmdemod1: Average time taken per process() call = 00:00:00.001808
+2014-Jan-10 11:12:01.324098 [INFO]    filerawwriter1: Average time taken per process() call = 00:00:00.000057
+2014-Jan-10 11:14:49.789750 [INFO]    System: Loading radio: tutofdm_packetgen_loop.xml
+2014-Jan-10 11:14:49.791016 [INFO]    XmlParser: Parsed engine: stackengine1
+2014-Jan-10 11:14:49.791114 [INFO]    XmlParser: Parsed component: packetgenerator1
+2014-Jan-10 11:14:49.791397 [INFO]    XmlParser: Parsed engine: phyengine1
+2014-Jan-10 11:14:49.791496 [INFO]    XmlParser: Parsed component: tutofdmmod1
+2014-Jan-10 11:14:49.791623 [INFO]    XmlParser: Parsed component: tutofdmdemod1
+2014-Jan-10 11:14:49.791722 [INFO]    XmlParser: Parsed component: filerawwriter1
+2014-Jan-10 11:14:49.791860 [INFO]    XmlParser: Parsed link: packetgenerator1 . bottomport1 -> tutofdmmod1 . input1
+2014-Jan-10 11:14:49.791993 [INFO]    XmlParser: Parsed link: tutofdmmod1 . output1 -> tutofdmdemod1 . input1
+2014-Jan-10 11:14:49.792067 [INFO]    XmlParser: Parsed link: tutofdmdemod1 . output1 -> filerawwriter1 . input1
+2014-Jan-10 11:14:50.089909 [INFO]    System: Starting radio
+2014-Jan-10 11:15:31.235627 [INFO]    System: Stopping radio
+2014-Jan-10 11:15:31.236141 [INFO]    StackOutTranslator: Thread in stack output translator interrupted
+2014-Jan-10 11:15:31.237133 [INFO]    packetgenerator1: Thread in stack component packetgenerator1 interrupted
+2014-Jan-10 11:15:31.237515 [INFO]    phyengine1: Thread in Engine phyengine1 interrupted
+2014-Jan-10 11:15:31.237715 [INFO]    System: Unloading radio
+2014-Jan-10 11:15:31.242207 [INFO]    tutofdmmod1: Average time taken per process() call = 00:00:06.953474
+2014-Jan-10 11:15:31.243520 [INFO]    tutofdmdemod1: Average time taken per process() call = 00:00:00.001569
+2014-Jan-10 11:15:31.243829 [INFO]    filerawwriter1: Average time taken per process() call = 00:00:00.000056
+2014-Jan-10 11:18:06.835625 [INFO]    System: Loading radio: tutofdm_packetgen_loop.xml
+2014-Jan-10 11:18:06.836079 [INFO]    XmlParser: Parsed engine: stackengine1
+2014-Jan-10 11:18:06.836107 [INFO]    XmlParser: Parsed component: packetgenerator1
+2014-Jan-10 11:18:06.836140 [INFO]    XmlParser: Parsed engine: phyengine1
+2014-Jan-10 11:18:06.836156 [INFO]    XmlParser: Parsed component: tutofdmmod1
+2014-Jan-10 11:18:06.836189 [INFO]    XmlParser: Parsed component: tutofdmdemod1
+2014-Jan-10 11:18:06.836217 [INFO]    XmlParser: Parsed component: filerawwriter1
+2014-Jan-10 11:18:06.836257 [INFO]    XmlParser: Parsed link: packetgenerator1 . bottomport1 -> tutofdmmod1 . input1
+2014-Jan-10 11:18:06.836283 [INFO]    XmlParser: Parsed link: tutofdmmod1 . output1 -> tutofdmdemod1 . input1
+2014-Jan-10 11:18:06.836302 [INFO]    XmlParser: Parsed link: tutofdmdemod1 . output1 -> filerawwriter1 . input1
+2014-Jan-10 11:18:07.228496 [INFO]    System: Starting radio
+2014-Jan-10 11:23:49.928756 [INFO]    System: Stopping radio
+2014-Jan-10 11:23:49.928945 [INFO]    StackOutTranslator: Thread in stack output translator interrupted
+2014-Jan-10 11:23:49.929519 [INFO]    packetgenerator1: Thread in stack component packetgenerator1 interrupted
+2014-Jan-10 11:23:49.929659 [INFO]    phyengine1: Thread in Engine phyengine1 interrupted
+2014-Jan-10 11:23:49.929708 [INFO]    System: Unloading radio
+2014-Jan-10 11:23:49.931077 [INFO]    tutofdmmod1: Average time taken per process() call = 00:00:05.357063
+2014-Jan-10 11:23:49.932287 [INFO]    tutofdmdemod1: Average time taken per process() call = 00:00:00.001563
+2014-Jan-10 11:23:49.932402 [INFO]    filerawwriter1: Average time taken per process() call = 00:00:00.000055
+2014-Jan-10 11:23:59.586348 [INFO]    System: Loading radio: tutofdm_packetgen_loop.xml
+2014-Jan-10 11:23:59.586786 [INFO]    XmlParser: Parsed engine: stackengine1
+2014-Jan-10 11:23:59.586815 [INFO]    XmlParser: Parsed component: packetgenerator1
+2014-Jan-10 11:23:59.586853 [INFO]    XmlParser: Parsed engine: phyengine1
+2014-Jan-10 11:23:59.586901 [INFO]    XmlParser: Parsed component: tutofdmmod1
+2014-Jan-10 11:23:59.586933 [INFO]    XmlParser: Parsed component: tutofdmdemod1
+2014-Jan-10 11:23:59.586961 [INFO]    XmlParser: Parsed component: filerawwriter1
+2014-Jan-10 11:23:59.586999 [INFO]    XmlParser: Parsed link: packetgenerator1 . bottomport1 -> tutofdmmod1 . input1
+2014-Jan-10 11:23:59.587022 [INFO]    XmlParser: Parsed link: tutofdmmod1 . output1 -> tutofdmdemod1 . input1
+2014-Jan-10 11:23:59.587041 [INFO]    XmlParser: Parsed link: tutofdmdemod1 . output1 -> filerawwriter1 . input1
+2014-Jan-10 11:23:59.946612 [INFO]    System: Starting radio
+2014-Jan-10 11:24:31.071633 [INFO]    System: Stopping radio
+2014-Jan-10 11:24:31.072190 [INFO]    StackOutTranslator: Thread in stack output translator interrupted
+2014-Jan-10 11:24:31.073058 [INFO]    packetgenerator1: Thread in stack component packetgenerator1 interrupted
+2014-Jan-10 11:24:31.073457 [INFO]    phyengine1: Thread in Engine phyengine1 interrupted
+2014-Jan-10 11:24:31.073643 [INFO]    System: Unloading radio
+2014-Jan-10 11:24:31.077765 [INFO]    tutofdmmod1: Average time taken per process() call = 00:00:02.503743
+2014-Jan-10 11:24:31.081114 [INFO]    tutofdmdemod1: Average time taken per process() call = 00:00:00.001204
+2014-Jan-10 11:24:31.081392 [INFO]    filerawwriter1: Average time taken per process() call = 00:00:00.000039
+2014-Jan-10 11:25:30.989232 [INFO]    System: Loading radio: tutofdm_packetgen_loop.xml
+2014-Jan-10 11:25:30.989690 [INFO]    XmlParser: Parsed engine: stackengine1
+2014-Jan-10 11:25:30.989718 [INFO]    XmlParser: Parsed component: packetgenerator1
+2014-Jan-10 11:25:30.989751 [INFO]    XmlParser: Parsed engine: phyengine1
+2014-Jan-10 11:25:30.989767 [INFO]    XmlParser: Parsed component: tutofdmmod1
+2014-Jan-10 11:25:30.989798 [INFO]    XmlParser: Parsed component: tutofdmdemod1
+2014-Jan-10 11:25:30.989826 [INFO]    XmlParser: Parsed component: filerawwriter1
+2014-Jan-10 11:25:30.989866 [INFO]    XmlParser: Parsed link: packetgenerator1 . bottomport1 -> tutofdmmod1 . input1
+2014-Jan-10 11:25:30.989892 [INFO]    XmlParser: Parsed link: tutofdmmod1 . output1 -> tutofdmdemod1 . input1
+2014-Jan-10 11:25:30.989911 [INFO]    XmlParser: Parsed link: tutofdmdemod1 . output1 -> filerawwriter1 . input1
+2014-Jan-10 11:25:31.298820 [INFO]    System: Starting radio
+2014-Jan-10 11:27:13.915527 [INFO]    System: Stopping radio
+2014-Jan-10 11:27:13.915940 [INFO]    StackOutTranslator: Thread in stack output translator interrupted
+2014-Jan-10 11:27:13.916804 [INFO]    packetgenerator1: Thread in stack component packetgenerator1 interrupted
+2014-Jan-10 11:27:13.917135 [INFO]    phyengine1: Thread in Engine phyengine1 interrupted
+2014-Jan-10 11:27:13.917280 [INFO]    System: Unloading radio
+2014-Jan-10 11:27:13.920834 [INFO]    tutofdmmod1: Average time taken per process() call = 00:00:04.004694
+2014-Jan-10 11:27:13.925312 [INFO]    tutofdmdemod1: Average time taken per process() call = 00:00:00.000743
+2014-Jan-10 11:27:13.925677 [INFO]    filerawwriter1: Average time taken per process() call = 00:00:00.000022
+2014-Jan-10 11:42:22.339285 [INFO]    System: Loading radio: tutofdm_packetgen_loop.xml
+2014-Jan-10 11:42:22.339705 [INFO]    XmlParser: Parsed engine: stackengine1
+2014-Jan-10 11:42:22.339729 [INFO]    XmlParser: Parsed component: packetgenerator1
+2014-Jan-10 11:42:22.339760 [INFO]    XmlParser: Parsed engine: phyengine1
+2014-Jan-10 11:42:22.339776 [INFO]    XmlParser: Parsed component: tutofdmmod1
+2014-Jan-10 11:42:22.339806 [INFO]    XmlParser: Parsed component: tutofdmdemod1
+2014-Jan-10 11:42:22.339851 [INFO]    XmlParser: Parsed component: filerawwriter1
+2014-Jan-10 11:42:22.339919 [INFO]    XmlParser: Parsed link: packetgenerator1 . bottomport1 -> tutofdmmod1 . input1
+2014-Jan-10 11:42:22.339944 [INFO]    XmlParser: Parsed link: tutofdmmod1 . output1 -> tutofdmdemod1 . input1
+2014-Jan-10 11:42:22.339964 [INFO]    XmlParser: Parsed link: tutofdmdemod1 . output1 -> filerawwriter1 . input1
+2014-Jan-10 11:42:22.595142 [INFO]    System: Starting radio
+2014-Jan-10 11:43:24.339320 [INFO]    System: Stopping radio
+2014-Jan-10 11:43:24.339707 [INFO]    StackOutTranslator: Thread in stack output translator interrupted
+2014-Jan-10 11:43:24.340673 [INFO]    packetgenerator1: Thread in stack component packetgenerator1 interrupted
+2014-Jan-10 11:43:24.341131 [INFO]    phyengine1: Thread in Engine phyengine1 interrupted
+2014-Jan-10 11:43:24.341352 [INFO]    System: Unloading radio
+2014-Jan-10 11:43:24.344851 [INFO]    tutofdmmod1: Average time taken per process() call = 00:00:06.537545
+2014-Jan-10 11:43:24.349044 [INFO]    tutofdmdemod1: Average time taken per process() call = 00:00:00.072669
+2014-Jan-10 11:43:24.349329 [INFO]    filerawwriter1: Average time taken per process() call = 00:00:00.000013
+2014-Jan-10 11:43:26.837323 [INFO]    System: Loading radio: tutofdm_packetgen_loop.xml
+2014-Jan-10 11:43:26.837673 [INFO]    XmlParser: Parsed engine: stackengine1
+2014-Jan-10 11:43:26.837699 [INFO]    XmlParser: Parsed component: packetgenerator1
+2014-Jan-10 11:43:26.837732 [INFO]    XmlParser: Parsed engine: phyengine1
+2014-Jan-10 11:43:26.837749 [INFO]    XmlParser: Parsed component: tutofdmmod1
+2014-Jan-10 11:43:26.837786 [INFO]    XmlParser: Parsed component: tutofdmdemod1
+2014-Jan-10 11:43:26.837824 [INFO]    XmlParser: Parsed component: filerawwriter1
+2014-Jan-10 11:43:26.837868 [INFO]    XmlParser: Parsed link: packetgenerator1 . bottomport1 -> tutofdmmod1 . input1
+2014-Jan-10 11:43:26.837893 [INFO]    XmlParser: Parsed link: tutofdmmod1 . output1 -> tutofdmdemod1 . input1
+2014-Jan-10 11:43:26.837913 [INFO]    XmlParser: Parsed link: tutofdmdemod1 . output1 -> filerawwriter1 . input1
+2014-Jan-10 11:43:27.050640 [INFO]    System: Starting radio
+2014-Jan-10 11:43:52.763645 [INFO]    System: Stopping radio
+2014-Jan-10 11:43:52.764139 [INFO]    StackOutTranslator: Thread in stack output translator interrupted
+2014-Jan-10 11:43:52.764939 [INFO]    packetgenerator1: Thread in stack component packetgenerator1 interrupted
+2014-Jan-10 11:43:52.765317 [INFO]    phyengine1: Thread in Engine phyengine1 interrupted
+2014-Jan-10 11:43:52.765486 [INFO]    System: Unloading radio
+2014-Jan-10 11:43:52.768905 [INFO]    tutofdmmod1: Average time taken per process() call = 00:00:01.439282
+2014-Jan-10 11:43:52.773205 [INFO]    tutofdmdemod1: Average time taken per process() call = 00:00:00.092844
+2014-Jan-10 11:43:52.773588 [INFO]    filerawwriter1: Average time taken per process() call = 00:00:00.000015
+2014-Jan-10 11:43:54.774954 [INFO]    System: Loading radio: tutofdm_packetgen_loop.xml
+2014-Jan-10 11:43:54.775348 [INFO]    XmlParser: Parsed engine: stackengine1
+2014-Jan-10 11:43:54.775374 [INFO]    XmlParser: Parsed component: packetgenerator1
+2014-Jan-10 11:43:54.775406 [INFO]    XmlParser: Parsed engine: phyengine1
+2014-Jan-10 11:43:54.775424 [INFO]    XmlParser: Parsed component: tutofdmmod1
+2014-Jan-10 11:43:54.775460 [INFO]    XmlParser: Parsed component: tutofdmdemod1
+2014-Jan-10 11:43:54.775497 [INFO]    XmlParser: Parsed component: filerawwriter1
+2014-Jan-10 11:43:54.775594 [INFO]    XmlParser: Parsed link: packetgenerator1 . bottomport1 -> tutofdmmod1 . input1
+2014-Jan-10 11:43:54.775639 [INFO]    XmlParser: Parsed link: tutofdmmod1 . output1 -> tutofdmdemod1 . input1
+2014-Jan-10 11:43:54.775662 [INFO]    XmlParser: Parsed link: tutofdmdemod1 . output1 -> filerawwriter1 . input1
+2014-Jan-10 11:43:54.942665 [INFO]    System: Starting radio
+2014-Jan-10 11:44:07.026607 [INFO]    System: Reconfiguring radio: tutofdm_packetgen_loop.xml
+2014-Jan-10 11:44:07.027251 [INFO]    XmlParser: Parsed engine: stackengine1
+2014-Jan-10 11:44:07.027323 [INFO]    XmlParser: Parsed component: packetgenerator1
+2014-Jan-10 11:44:07.027412 [INFO]    XmlParser: Parsed engine: phyengine1
+2014-Jan-10 11:44:07.027472 [INFO]    XmlParser: Parsed component: tutofdmmod1
+2014-Jan-10 11:44:07.027587 [INFO]    XmlParser: Parsed component: tutofdmdemod1
+2014-Jan-10 11:44:07.027711 [INFO]    XmlParser: Parsed component: filerawwriter1
+2014-Jan-10 11:44:07.027825 [INFO]    XmlParser: Parsed link: packetgenerator1 . bottomport1 -> tutofdmmod1 . input1
+2014-Jan-10 11:44:07.027938 [INFO]    XmlParser: Parsed link: tutofdmmod1 . output1 -> tutofdmdemod1 . input1
+2014-Jan-10 11:44:07.028011 [INFO]    XmlParser: Parsed link: tutofdmdemod1 . output1 -> filerawwriter1 . input1
+2014-Jan-10 11:44:13.462259 [INFO]    phyengine1: Reconfigured parameter plotframedetect : true
+2014-Jan-10 11:44:25.086045 [INFO]    System: Reconfiguring radio: tutofdm_packetgen_loop.xml
+2014-Jan-10 11:44:25.086996 [INFO]    XmlParser: Parsed engine: stackengine1
+2014-Jan-10 11:44:25.087146 [INFO]    XmlParser: Parsed component: packetgenerator1
+2014-Jan-10 11:44:25.087328 [INFO]    XmlParser: Parsed engine: phyengine1
+2014-Jan-10 11:44:25.087454 [INFO]    XmlParser: Parsed component: tutofdmmod1
+2014-Jan-10 11:44:25.087668 [INFO]    XmlParser: Parsed component: tutofdmdemod1
+2014-Jan-10 11:44:25.087831 [INFO]    XmlParser: Parsed component: filerawwriter1
+2014-Jan-10 11:44:25.088026 [INFO]    XmlParser: Parsed link: packetgenerator1 . bottomport1 -> tutofdmmod1 . input1
+2014-Jan-10 11:44:25.088128 [INFO]    XmlParser: Parsed link: tutofdmmod1 . output1 -> tutofdmdemod1 . input1
+2014-Jan-10 11:44:25.088219 [INFO]    XmlParser: Parsed link: tutofdmdemod1 . output1 -> filerawwriter1 . input1
+2014-Jan-10 11:44:31.953133 [INFO]    phyengine1: Reconfigured parameter plotrxpreamble : true
+2014-Jan-10 11:44:54.299653 [INFO]    System: Reconfiguring radio: tutofdm_packetgen_loop.xml
+2014-Jan-10 11:44:54.300289 [INFO]    XmlParser: Parsed engine: stackengine1
+2014-Jan-10 11:44:54.300361 [INFO]    XmlParser: Parsed component: packetgenerator1
+2014-Jan-10 11:44:54.300447 [INFO]    XmlParser: Parsed engine: phyengine1
+2014-Jan-10 11:44:54.300501 [INFO]    XmlParser: Parsed component: tutofdmmod1
+2014-Jan-10 11:44:54.300614 [INFO]    XmlParser: Parsed component: tutofdmdemod1
+2014-Jan-10 11:44:54.300740 [INFO]    XmlParser: Parsed component: filerawwriter1
+2014-Jan-10 11:44:54.300853 [INFO]    XmlParser: Parsed link: packetgenerator1 . bottomport1 -> tutofdmmod1 . input1
+2014-Jan-10 11:44:54.300926 [INFO]    XmlParser: Parsed link: tutofdmmod1 . output1 -> tutofdmdemod1 . input1
+2014-Jan-10 11:44:54.300994 [INFO]    XmlParser: Parsed link: tutofdmdemod1 . output1 -> filerawwriter1 . input1
+2014-Jan-10 11:45:01.923658 [INFO]    System: Reconfiguring radio: tutofdm_packetgen_loop.xml
+2014-Jan-10 11:45:01.924362 [INFO]    XmlParser: Parsed engine: stackengine1
+2014-Jan-10 11:45:01.924438 [INFO]    XmlParser: Parsed component: packetgenerator1
+2014-Jan-10 11:45:01.924526 [INFO]    XmlParser: Parsed engine: phyengine1
+2014-Jan-10 11:45:01.924581 [INFO]    XmlParser: Parsed component: tutofdmmod1
+2014-Jan-10 11:45:01.924694 [INFO]    XmlParser: Parsed component: tutofdmdemod1
+2014-Jan-10 11:45:01.924818 [INFO]    XmlParser: Parsed component: filerawwriter1
+2014-Jan-10 11:45:01.924933 [INFO]    XmlParser: Parsed link: packetgenerator1 . bottomport1 -> tutofdmmod1 . input1
+2014-Jan-10 11:45:01.925005 [INFO]    XmlParser: Parsed link: tutofdmmod1 . output1 -> tutofdmdemod1 . input1
+2014-Jan-10 11:45:01.925073 [INFO]    XmlParser: Parsed link: tutofdmdemod1 . output1 -> filerawwriter1 . input1
+2014-Jan-10 11:45:13.616945 [INFO]    phyengine1: Reconfigured parameter ploteq : true
+2014-Jan-10 11:45:34.533435 [INFO]    System: Reconfiguring radio: tutofdm_packetgen_loop.xml
+2014-Jan-10 11:45:34.534064 [INFO]    XmlParser: Parsed engine: stackengine1
+2014-Jan-10 11:45:34.534135 [INFO]    XmlParser: Parsed component: packetgenerator1
+2014-Jan-10 11:45:34.534219 [INFO]    XmlParser: Parsed engine: phyengine1
+2014-Jan-10 11:45:34.534274 [INFO]    XmlParser: Parsed component: tutofdmmod1
+2014-Jan-10 11:45:34.534388 [INFO]    XmlParser: Parsed component: tutofdmdemod1
+2014-Jan-10 11:45:34.534510 [INFO]    XmlParser: Parsed component: filerawwriter1
+2014-Jan-10 11:45:34.534624 [INFO]    XmlParser: Parsed link: packetgenerator1 . bottomport1 -> tutofdmmod1 . input1
+2014-Jan-10 11:45:34.534696 [INFO]    XmlParser: Parsed link: tutofdmmod1 . output1 -> tutofdmdemod1 . input1
+2014-Jan-10 11:45:34.534763 [INFO]    XmlParser: Parsed link: tutofdmdemod1 . output1 -> filerawwriter1 . input1
+2014-Jan-10 11:45:38.215772 [INFO]    phyengine1: Reconfigured parameter plotsymbols : true
+2014-Jan-10 11:45:49.140590 [INFO]    System: Reconfiguring radio: tutofdm_packetgen_loop.xml
+2014-Jan-10 11:45:49.141254 [INFO]    XmlParser: Parsed engine: stackengine1
+2014-Jan-10 11:45:49.141376 [INFO]    XmlParser: Parsed component: packetgenerator1
+2014-Jan-10 11:45:49.141486 [INFO]    XmlParser: Parsed engine: phyengine1
+2014-Jan-10 11:45:49.141561 [INFO]    XmlParser: Parsed component: tutofdmmod1
+2014-Jan-10 11:45:49.141697 [INFO]    XmlParser: Parsed component: tutofdmdemod1
+2014-Jan-10 11:45:49.141842 [INFO]    XmlParser: Parsed component: filerawwriter1
+2014-Jan-10 11:45:49.141981 [INFO]    XmlParser: Parsed link: packetgenerator1 . bottomport1 -> tutofdmmod1 . input1
+2014-Jan-10 11:45:49.142083 [INFO]    XmlParser: Parsed link: tutofdmmod1 . output1 -> tutofdmdemod1 . input1
+2014-Jan-10 11:45:49.142175 [INFO]    XmlParser: Parsed link: tutofdmdemod1 . output1 -> filerawwriter1 . input1
+2014-Jan-10 11:45:52.570750 [INFO]    phyengine1: Reconfigured parameter modulationdepth : 4
+2014-Jan-10 11:46:07.735091 [INFO]    System: Loading radio: tutofdm_packetgen_loop.xml
+2014-Jan-10 11:46:07.735547 [INFO]    XmlParser: Parsed engine: stackengine1
+2014-Jan-10 11:46:07.735574 [INFO]    XmlParser: Parsed component: packetgenerator1
+2014-Jan-10 11:46:07.735607 [INFO]    XmlParser: Parsed engine: phyengine1
+2014-Jan-10 11:46:07.735625 [INFO]    XmlParser: Parsed component: tutofdmmod1
+2014-Jan-10 11:46:07.735660 [INFO]    XmlParser: Parsed component: tutofdmdemod1
+2014-Jan-10 11:46:07.735698 [INFO]    XmlParser: Parsed component: filerawwriter1
+2014-Jan-10 11:46:07.735739 [INFO]    XmlParser: Parsed link: packetgenerator1 . bottomport1 -> tutofdmmod1 . input1
+2014-Jan-10 11:46:07.735766 [INFO]    XmlParser: Parsed link: tutofdmmod1 . output1 -> tutofdmdemod1 . input1
+2014-Jan-10 11:46:07.735788 [INFO]    XmlParser: Parsed link: tutofdmdemod1 . output1 -> filerawwriter1 . input1
+2014-Jan-10 11:46:07.996104 [INFO]    System: Starting radio
+2014-Jan-10 11:46:27.687439 [INFO]    System: Reconfiguring radio: tutofdm_packetgen_loop.xml
+2014-Jan-10 11:46:27.688168 [INFO]    XmlParser: Parsed engine: stackengine1
+2014-Jan-10 11:46:27.688297 [INFO]    XmlParser: Parsed component: packetgenerator1
+2014-Jan-10 11:46:27.688411 [INFO]    XmlParser: Parsed engine: phyengine1
+2014-Jan-10 11:46:27.688514 [INFO]    XmlParser: Parsed component: tutofdmmod1
+2014-Jan-10 11:46:27.688654 [INFO]    XmlParser: Parsed component: tutofdmdemod1
+2014-Jan-10 11:46:27.688800 [INFO]    XmlParser: Parsed component: filerawwriter1
+2014-Jan-10 11:46:27.688960 [INFO]    XmlParser: Parsed link: packetgenerator1 . bottomport1 -> tutofdmmod1 . input1
+2014-Jan-10 11:46:27.689070 [INFO]    XmlParser: Parsed link: tutofdmmod1 . output1 -> tutofdmdemod1 . input1
+2014-Jan-10 11:46:27.689164 [INFO]    XmlParser: Parsed link: tutofdmdemod1 . output1 -> filerawwriter1 . input1
+2014-Jan-10 11:46:35.699291 [INFO]    phyengine1: Reconfigured parameter modulationdepth : 2
+2014-Jan-10 11:47:18.534008 [INFO]    System: Loading radio: tutofdm_packetgen_loop.xml
+2014-Jan-10 11:47:18.534401 [INFO]    XmlParser: Parsed engine: stackengine1
+2014-Jan-10 11:47:18.534447 [INFO]    XmlParser: Parsed component: packetgenerator1
+2014-Jan-10 11:47:18.534486 [INFO]    XmlParser: Parsed engine: phyengine1
+2014-Jan-10 11:47:18.534510 [INFO]    XmlParser: Parsed component: tutofdmmod1
+2014-Jan-10 11:47:18.534552 [INFO]    XmlParser: Parsed component: tutofdmdemod1
+2014-Jan-10 11:47:18.534598 [INFO]    XmlParser: Parsed component: filerawwriter1
+2014-Jan-10 11:47:18.534652 [INFO]    XmlParser: Parsed link: packetgenerator1 . bottomport1 -> tutofdmmod1 . input1
+2014-Jan-10 11:47:18.534684 [INFO]    XmlParser: Parsed link: tutofdmmod1 . output1 -> tutofdmdemod1 . input1
+2014-Jan-10 11:47:18.534710 [INFO]    XmlParser: Parsed link: tutofdmdemod1 . output1 -> filerawwriter1 . input1
+2014-Jan-10 11:47:18.797557 [INFO]    System: Starting radio
+2014-Jan-10 11:47:32.684198 [INFO]    System: Reconfiguring radio: tutofdm_packetgen_loop.xml
+2014-Jan-10 11:47:32.684796 [INFO]    XmlParser: Parsed engine: stackengine1
+2014-Jan-10 11:47:32.684866 [INFO]    XmlParser: Parsed component: packetgenerator1
+2014-Jan-10 11:47:32.684954 [INFO]    XmlParser: Parsed engine: phyengine1
+2014-Jan-10 11:47:32.685025 [INFO]    XmlParser: Parsed component: tutofdmmod1
+2014-Jan-10 11:47:32.685138 [INFO]    XmlParser: Parsed component: tutofdmdemod1
+2014-Jan-10 11:47:32.685259 [INFO]    XmlParser: Parsed component: filerawwriter1
+2014-Jan-10 11:47:32.685372 [INFO]    XmlParser: Parsed link: packetgenerator1 . bottomport1 -> tutofdmmod1 . input1
+2014-Jan-10 11:47:32.685443 [INFO]    XmlParser: Parsed link: tutofdmmod1 . output1 -> tutofdmdemod1 . input1
+2014-Jan-10 11:47:32.685511 [INFO]    XmlParser: Parsed link: tutofdmdemod1 . output1 -> filerawwriter1 . input1
+2014-Jan-10 11:47:38.530967 [INFO]    phyengine1: Reconfigured parameter modulationdepth : 4
+2014-Jan-10 11:47:52.968740 [INFO]    System: Reconfiguring radio: tutofdm_packetgen_loop.xml
+2014-Jan-10 11:47:52.969342 [INFO]    XmlParser: Parsed engine: stackengine1
+2014-Jan-10 11:47:52.969412 [INFO]    XmlParser: Parsed component: packetgenerator1
+2014-Jan-10 11:47:52.969500 [INFO]    XmlParser: Parsed engine: phyengine1
+2014-Jan-10 11:47:52.969554 [INFO]    XmlParser: Parsed component: tutofdmmod1
+2014-Jan-10 11:47:52.969666 [INFO]    XmlParser: Parsed component: tutofdmdemod1
+2014-Jan-10 11:47:52.969789 [INFO]    XmlParser: Parsed component: filerawwriter1
+2014-Jan-10 11:47:52.969899 [INFO]    XmlParser: Parsed link: packetgenerator1 . bottomport1 -> tutofdmmod1 . input1
+2014-Jan-10 11:47:52.969968 [INFO]    XmlParser: Parsed link: tutofdmmod1 . output1 -> tutofdmdemod1 . input1
+2014-Jan-10 11:47:52.970033 [INFO]    XmlParser: Parsed link: tutofdmdemod1 . output1 -> filerawwriter1 . input1
+2014-Jan-10 11:47:55.508767 [INFO]    phyengine1: Reconfigured parameter modulationdepth : 2
+2014-Jan-10 11:48:40.284389 [INFO]    System: Reconfiguring radio: tutofdm_packetgen_loop.xml
+2014-Jan-10 11:48:40.285026 [INFO]    XmlParser: Parsed engine: stackengine1
+2014-Jan-10 11:48:40.285096 [INFO]    XmlParser: Parsed component: packetgenerator1
+2014-Jan-10 11:48:40.285180 [INFO]    XmlParser: Parsed engine: phyengine1
+2014-Jan-10 11:48:40.285234 [INFO]    XmlParser: Parsed component: tutofdmmod1
+2014-Jan-10 11:48:40.285345 [INFO]    XmlParser: Parsed component: tutofdmdemod1
+2014-Jan-10 11:48:40.285466 [INFO]    XmlParser: Parsed component: filerawwriter1
+2014-Jan-10 11:48:40.285576 [INFO]    XmlParser: Parsed link: packetgenerator1 . bottomport1 -> tutofdmmod1 . input1
+2014-Jan-10 11:48:40.285648 [INFO]    XmlParser: Parsed link: tutofdmmod1 . output1 -> tutofdmdemod1 . input1
+2014-Jan-10 11:48:40.285718 [INFO]    XmlParser: Parsed link: tutofdmdemod1 . output1 -> filerawwriter1 . input1
+2014-Jan-10 11:48:49.934357 [INFO]    phyengine1: Reconfigured parameter modulationdepth : 4
+2014-Jan-10 11:56:19.156697 [INFO]    System: Stopping radio
+2014-Jan-10 11:56:19.157177 [INFO]    StackOutTranslator: Thread in stack output translator interrupted
+2014-Jan-10 11:56:19.158079 [INFO]    packetgenerator1: Thread in stack component packetgenerator1 interrupted
+2014-Jan-10 11:56:19.158442 [INFO]    phyengine1: Thread in Engine phyengine1 interrupted
+2014-Jan-10 11:56:19.158607 [INFO]    System: Unloading radio
+2014-Jan-10 11:56:19.162407 [INFO]    tutofdmmod1: Average time taken per process() call = 00:00:01.018232
+2014-Jan-10 11:56:19.163313 [INFO]    tutofdmdemod1: Average time taken per process() call = 00:00:00.001730
+2014-Jan-10 11:56:19.163561 [INFO]    filerawwriter1: Average time taken per process() call = 00:00:00.000120
+2014-Jan-10 11:56:21.140177 [INFO]    System: Loading radio: tutofdm_packetgen_loop.xml
+2014-Jan-10 11:56:21.141512 [INFO]    XmlParser: Parsed engine: stackengine1
+2014-Jan-10 11:56:21.141540 [INFO]    XmlParser: Parsed component: packetgenerator1
+2014-Jan-10 11:56:21.141573 [INFO]    XmlParser: Parsed engine: phyengine1
+2014-Jan-10 11:56:21.141591 [INFO]    XmlParser: Parsed component: tutofdmmod1
+2014-Jan-10 11:56:21.141631 [INFO]    XmlParser: Parsed component: tutofdmdemod1
+2014-Jan-10 11:56:21.141670 [INFO]    XmlParser: Parsed component: filerawwriter1
+2014-Jan-10 11:56:21.141761 [INFO]    XmlParser: Parsed link: packetgenerator1 . bottomport1 -> tutofdmmod1 . input1
+2014-Jan-10 11:56:21.141803 [INFO]    XmlParser: Parsed link: tutofdmmod1 . output1 -> tutofdmdemod1 . input1
+2014-Jan-10 11:56:21.141824 [INFO]    XmlParser: Parsed link: tutofdmdemod1 . output1 -> filerawwriter1 . input1
+2014-Jan-10 11:56:21.356294 [INFO]    System: Starting radio
+2014-Jan-10 11:57:43.193590 [INFO]    System: Stopping radio
+2014-Jan-10 11:57:43.194108 [INFO]    StackOutTranslator: Thread in stack output translator interrupted
+2014-Jan-10 11:57:43.194907 [INFO]    packetgenerator1: Thread in stack component packetgenerator1 interrupted
+2014-Jan-10 11:57:43.195288 [INFO]    phyengine1: Thread in Engine phyengine1 interrupted
+2014-Jan-10 11:57:43.195476 [INFO]    System: Unloading radio
+2014-Jan-10 11:57:43.199098 [INFO]    tutofdmmod1: Average time taken per process() call = 00:00:40.064739
+2014-Jan-10 11:57:43.200277 [INFO]    tutofdmdemod1: Average time taken per process() call = 00:00:00.008905
+2014-Jan-10 11:57:43.200669 [INFO]    filerawwriter1: Average time taken per process() call = 00:00:00.000070
