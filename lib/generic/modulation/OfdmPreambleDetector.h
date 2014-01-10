@@ -62,6 +62,7 @@ public:
   typedef CplxBuf::iterator               CplxBufIt;
   typedef boost::circular_buffer<float>   FloatBuf;
   typedef FloatBuf::iterator              FloatBufIt;
+  typedef std::vector<float>              FloatVec;
 
   /** Create an OFDM preamble detector.
    *
@@ -125,10 +126,17 @@ public:
     eBuffer_.assign(sLen_, Cplx(0,0));
     pBuffer_.assign(sLen_/2, Cplx(0,0));
     vBuffer_.assign(cpLen_, 0);
-    vDebugBuffer_.assign(sLen_, 0);
+    vDebugBuffer_.resize(sLen_);
     currentP_ = Cplx(0,0);
     currentE_ = Cplx(0,0);
     vMovingAve_ = 0;
+  }
+
+  ///Convenience function used for debugging
+  void getDebugBuffer(FloatVec& v)
+  {
+    v.resize(vDebugBuffer_.size());
+    copy(vDebugBuffer_.begin(), vDebugBuffer_.end(), v.begin());
   }
 
   /// Convenience function for logging.
