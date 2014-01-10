@@ -56,6 +56,7 @@ ADD_SUBDIRECTORY(Example)
 ADD_SUBDIRECTORY(FileReader)
 ADD_SUBDIRECTORY(FileWriter)
 ADD_SUBDIRECTORY(MultiportExample)
+ADD_SUBDIRECTORY(PacketGenerator)
 ADD_SUBDIRECTORY(TunTap)
 
 ########################################################################
