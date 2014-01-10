@@ -2,6 +2,17 @@
 
 <softwareradio name="Radio1">
 
+  <controller class="rffrontend">
+    <parameter name="minfrequency" value="2490500000"/>
+    <parameter name="maxfrequency" value="2494500000"/>
+    <parameter name="minbandwidth" value="250000"/>
+    <parameter name="maxbandwidth" value="2000000"/>
+    <parameter name="mingain" value="0"/>
+    <parameter name="maxgain" value="20"/>
+    <parameter name="frontend" value="usrptx1"/>
+    <parameter name="frontendengine" value="phyengine1"/>
+  </controller>
+
   <engine name="stackengine1" class="stackengine">
     
     <component name="packetgenerator1" class="packetgenerator">
@@ -33,8 +44,9 @@
     </component>
 
     <component name="usrptx1" class="usrptx">
-      <parameter name="frequency" value="2092500000"/>
+      <parameter name="frequency" value="2492500000"/>
       <parameter name="rate" value="1000000"/>
+      <parameter name="gain" value="5"/>
       <parameter name="streaming" value="false"/>
       <port name="input1" class="input"/>
     </component>

@@ -2,10 +2,21 @@
 
 <softwareradio name="Radio1">
 
+  <controller class="rffrontend">
+    <parameter name="minfrequency" value="2490500000"/>
+    <parameter name="maxfrequency" value="2494500000"/>
+    <parameter name="minbandwidth" value="250000"/>
+    <parameter name="maxbandwidth" value="2000000"/>
+    <parameter name="mingain" value="0"/>
+    <parameter name="maxgain" value="20"/>
+    <parameter name="frontend" value="usrprx1"/>
+    <parameter name="frontendengine" value="phyengine1"/>
+  </controller>
+
   <engine name="phyengine1" class="phyengine">
 
     <component name="usrprx1" class="usrprx">
-      <parameter name="frequency" value="2092500000"/>
+      <parameter name="frequency" value="2492500000"/>
       <parameter name="rate" value="500000"/>
       <port name="output1" class="output"/>
     </component>
