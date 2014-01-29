@@ -18,7 +18,7 @@
       <parameter name="numpilotcarriers" value="8"/>
       <parameter name="numguardcarriers" value="55"/>
       <parameter name="cyclicprefixlength" value="16"/>
-      <parameter name="modulationdepth" value="4"/>
+      <parameter name="modulationdepth" value="2"/>
       <parameter name="plotpreamble" value="true"/>
       <parameter name="plotbins" value="true"/>
       <parameter name="plotframe" value="true"/>
