@@ -22,6 +22,7 @@ PacketGeneratorGuiWidget::PacketGeneratorGuiWidget(PGGuiCallback* callback,
   lengthBox_ = new QSpinBox(this);
   lengthBox_->setRange(1,2048);
   lengthBox_->setSingleStep(1);
+  lengthBox_->setValue(1024);
 
   b_ = new QPushButton("Generate");
   connect(b_, SIGNAL(clicked()), this, SLOT(generatePacket()));

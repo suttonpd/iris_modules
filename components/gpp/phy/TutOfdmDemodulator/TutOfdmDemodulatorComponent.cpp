@@ -80,6 +80,10 @@ TutOfdmDemodulatorComponent::TutOfdmDemodulatorComponent(std::string name)
     ,numRxFrames_(0)
     ,numRxFails_(0)
     ,symbolCount_(0)
+    ,frameDetectPlot_(NULL)
+    ,rxPreamblePlot_(NULL)
+    ,eqPlot_(NULL)
+    ,symbolPlot_(NULL)
 {
   registerParameter(
     "debug", "Whether to write debug data to file.",

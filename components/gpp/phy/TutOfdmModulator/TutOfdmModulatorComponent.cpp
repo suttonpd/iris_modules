@@ -68,6 +68,9 @@ TutOfdmModulatorComponent::TutOfdmModulatorComponent(std::string name)
     ,timeStamp_(0)
     ,fft_(NULL)
     ,fftBins_(NULL)
+    ,preamblePlot_(NULL)
+    ,binsPlot_(NULL)
+    ,framePlot_(NULL)
 {
   registerParameter(
     "debug", "Whether to output debug data.",

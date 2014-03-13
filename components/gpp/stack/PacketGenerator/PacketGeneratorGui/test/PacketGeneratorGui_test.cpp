@@ -50,15 +50,7 @@ using namespace std;
 void threadMain1()
 {
   PacketGeneratorGui gui;
-  int length = 0;
-  int count = 10;
-  while(count > 0)
-  {
-    gui.waitForPacket(length);
-    count--;
-    std::cout << "Length = " << length << std::endl;
-  }
-  boost::this_thread::sleep(boost::posix_time::seconds(10));
+  boost::this_thread::sleep(boost::posix_time::seconds(2));
 
 }
 
