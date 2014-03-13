@@ -54,6 +54,7 @@ ENDMACRO(IRIS_APPEND_NOINSTALL_LIST)
 ADD_SUBDIRECTORY(Example)
 ADD_SUBDIRECTORY(RfFrontEnd)
 ADD_SUBDIRECTORY(SpectrogramDisplay)
+ADD_SUBDIRECTORY(WaterfallDisplay)
 
 ########################################################################
 # List controllers to be installed/not installed
