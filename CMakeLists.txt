@@ -43,6 +43,7 @@ INCLUDE(IrisModulesPackage)	#setup cpack
 FIND_PACKAGE(IRIS REQUIRED)
 INCLUDE_DIRECTORIES(${IRIS_INCLUDE_DIRS})
 INCLUDE_DIRECTORIES(${PROJECT_SOURCE_DIR}/lib/generic)
+INCLUDE_DIRECTORIES(${IRIS_CORE_SOURCE_DIR})
 
 ########################################################################
 # Install Dirs
@@ -83,6 +84,11 @@ IF(MSVC)
     LIST(APPEND IRIS_CORE_COMMON_FLAGS_AND_DEFINES -DHAVE_CONFIG_H)
     ADD_DEFINITIONS(/MP) #build with multiple processors
 ENDIF(MSVC)
+
+IF(${CMAKE_SYSTEM_NAME} MATCHES "Darwin")
+   # The following is needed for weak linking to work under OS X
+   SET(CMAKE_SHARED_LINKER_FLAGS "-undefined dynamic_lookup")
+ENDIF(${CMAKE_SYSTEM_NAME} MATCHES "Darwin")
 
 ########################################################################
 # Setup Boost
