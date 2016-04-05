@@ -6,11 +6,11 @@ Iris is a software architecture for building highly reconfigurable radio network
 
 The Iris architecture offers support for all layers of the network stack and provides a platform for the development of not only reconfigurable point-to-point radio links but complete networks of reconfigurable radios. Individual radios are described using an XML document. This lists the components which comprise the radio, gives the values to be used for their parameters and describes the connections between them.
 
-Iris was originally developed by CTVR, The Telecommunications Research Centre, based at University of Dublin, Trinity College. In 2013, it was released under the LGPL v3 license and is currently managed by Software Radio Systems (http://www.softwareradiosystems.com).
+Iris was originally developed by CTVR, The Telecommunications Research Centre, based at University of Dublin, Trinity College. In 2013, it was released under the LGPL v3 license.
 
 ## Getting Started
 
-The installation guide can be found here: http://www.softwareradiosystems.com/redmine/projects/iris/wiki/Installing_Iris
+The installation guide can be found here: http://www.hostedredmine.com/projects/iris_software_radio/wiki/Installing_Iris
 
 ## Requirements
 
@@ -31,7 +31,7 @@ Optional:
 
 ## Where To Get Help
 
-* Redmine: http://www.softwareradiosystems.com/redmine/projects/iris
+* Redmine: http://www.hostedredmine.com/projects/iris_software_radio
 * Iris-discuss mailing list: http://www.softwareradiosystems.com/mailman/listinfo/iris-discuss
 * Iris blog: http://irissoftwareradio.wordpress.com
 
